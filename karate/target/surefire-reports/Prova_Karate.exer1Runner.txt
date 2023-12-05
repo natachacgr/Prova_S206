@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: Prova_Karate.exer1Runner
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 8.243 s <<< FAILURE! - in Prova_Karate.exer1Runner
+test[1][1]  Time elapsed: 2.97 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+match failed: EQUALS
+  $ | actual path does not exist (STRING:STRING)
+  '#notpresent'
+  'Novo Usuário'
+
+classpath:Prova_Karate/exer1.feature:8
+
+test[1][2]  Time elapsed: 0.562 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+no step-definition method match found for: match response.data.size > 0
+classpath:Prova_Karate/exer1.feature:14
+

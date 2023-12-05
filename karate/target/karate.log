@@ -1,0 +1,2719 @@
+21:11:26.649 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:11:27.772 [main] INFO  com.intuit.karate - karate.env system property was: null 
+21:11:28.302 [main] DEBUG com.intuit.karate - request:
+1 > POST https://gorest.co.in/public-api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 90
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"gender":"male","name":"Novo Usuário","email":"novousuario@teste.com","status":"active"}
+
+21:11:30.264 [main] DEBUG com.intuit.karate - response time in milliseconds: 1960
+1 < 200
+1 < Date: Tue, 05 Dec 2023 00:11:30 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"65ab5ef0fb80a32b1723c5368d8edb14"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: f88338f7-191d-42ad-968c-baf600b8aca7
+1 < x-runtime: 0.015108
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=%2FzQ%2BSa9aoOgkI6ZdsHZO4VClElTbnjLuTUmY%2B3MLWptTJmGlJ7QEdRmUJLMl4IVcEVzdjk0Lwo%2F2z1rBBn6idlSWvvMwSzVEfTA6jti2%2FnpKE6mmrCYfIWgMxiR3Buo%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 830812747abe64f6-GIG
+1 < alt-svc: h3=":443"; ma=86400
+{"code":401,"data":{"message":"Authentication failed"},"meta":null}
+21:11:30.274 [main] ERROR com.intuit.karate - classpath:Prova_Karate/exer1.feature:7
+Then status 201
+status code was: 200, expected: 201, response time in milliseconds: 1960, url: https://gorest.co.in/public-api/users, response: 
+{"code":401,"meta":null,"data":{"message":"Authentication failed"}}
+classpath:Prova_Karate/exer1.feature:7
+21:11:30.324 [main] INFO  com.intuit.karate - karate.env system property was: null 
+21:11:30.329 [main] DEBUG com.intuit.karate - request:
+1 > GET https://gorest.co.in/public-api/users
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:11:32.205 [main] DEBUG com.intuit.karate - response time in milliseconds: 1873
+1 < 200
+1 < Date: Tue, 05 Dec 2023 00:11:31 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"cb60cd6faf671b9586e76122a5aceb05"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: baa1c1b8-35e9-453b-8d2d-5da681ad8b21
+1 < x-runtime: 0.037198
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=RdpGZZeKLYhKDXp1Wl5KZn%2B%2BBeDSoxzjy4dSqmQhYMEmsYP8BWuXQTV0afnGPuGmv9uXvFiIaSjsUOvyw6hUT00dcysvtu%2B8%2FG%2FGC0l0oGOdGYwhdeI3N9nebh0ubXo%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8308127cc87172e1-GIG
+1 < alt-svc: h3=":443"; ma=86400
+{"code":200,"data":[{"gender":"male","name":"Karthik Sethi","id":5710543,"email":"karthik_sethi@stroman-rowe.test","status":"active"},{"gender":"female","name":"Gautam Pilla","id":5710542,"email":"gautam_pilla@ullrich.example","status":"inactive"},{"gender":"female","name":"Anang Nehru","id":5710541,"email":"anang_nehru@hermann-lindgren.example","status":"active"},{"gender":"female","name":"Bankimchandra Kaur","id":5710540,"email":"bankimchandra_kaur@osinski-greenholt.example","status":"active"},{"gender":"female","name":"Chaturaanan Sharma","id":5710539,"email":"chaturaanan_sharma@mueller.test","status":"active"},{"gender":"male","name":"Kalinda Menon","id":5710538,"email":"kalinda_menon@lynch-veum.test","status":"active"},{"gender":"female","name":"Gaurang Khanna","id":5710537,"email":"gaurang_khanna@nikolaus-donnelly.example","status":"inactive"},{"gender":"female","name":"Anjushree Nayar","id":5710536,"email":"nayar_anjushree@damore.example","status":"active"},{"gender":"female","name":"Akshata Kakkar","id":5710535,"email":"kakkar_akshata@rohan.example","status":"inactive"},{"gender":"female","name":"Rohan Johar CPA","id":5710533,"email":"johar_rohan_cpa@schiller.test","status":"inactive"}],"meta":{"pagination":{"total":2671,"pages":268,"limit":10,"page":1}}}
+21:11:32.229 [main] ERROR com.intuit.karate - classpath:Prova_Karate/exer1.feature:14
+And match response.data.size > 0
+no step-definition method match found for: match response.data.size > 0
+classpath:Prova_Karate/exer1.feature:14
+21:11:32.246 [main] INFO  com.intuit.karate - karate.env system property was: null 
+21:11:32.251 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://gorest.co.in/public-api/users/5710543
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 40
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Novo Nome","status":"inactive"}
+
+21:11:33.454 [main] DEBUG com.intuit.karate - response time in milliseconds: 1203
+1 < 200
+1 < Date: Tue, 05 Dec 2023 00:11:33 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"65ab5ef0fb80a32b1723c5368d8edb14"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: a6729583-1c10-455b-9c30-d15d965aecd9
+1 < x-runtime: 0.024105
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=e8TkT1NkHp%2B15Ita%2FhCxCAiqd31fbygkg%2FyvoXUFJTAOxoLUwXrJCbWZrhrkbv4KbHFYgzECKRgcidA43iAL%2Fx2WpeC7Iq3kLdxRvwTwmdnLixSmCFI%2BduQpbeO0mkI%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 83081288ce571f81-GIG
+1 < alt-svc: h3=":443"; ma=86400
+{"code":401,"data":{"message":"Authentication failed"},"meta":null}
+21:11:33.511 [main] ERROR com.intuit.karate - classpath:Prova_Karate/exer1.feature:21
+And match response.data.name == 'Novo Nome'
+match failed: EQUALS
+  $ | actual path does not exist (STRING:STRING)
+  '#notpresent'
+  'Novo Nome'
+
+classpath:Prova_Karate/exer1.feature:21
+21:11:33.526 [main] INFO  com.intuit.karate - karate.env system property was: null 
+21:11:33.529 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://gorest.co.in/public-api/users/5710538
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:11:33.967 [main] DEBUG com.intuit.karate - response time in milliseconds: 437
+1 < 200
+1 < Date: Tue, 05 Dec 2023 00:11:34 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"65ab5ef0fb80a32b1723c5368d8edb14"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: 1cb702c1-dacb-485e-bf05-2ae115a2c566
+1 < x-runtime: 0.013697
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=hMbWseqVdH4yrxsVJmNMWckvPQiK8fj%2BayDAkc1WxjJaQW7mQklx8btgy1u6ZVEBQnO%2BqIEdbwbVmr9ay2B%2Ff17YABEop5Hbyh%2F5Zb65KI%2B0LKraJV4rI%2F7T7gdFw6U%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8308129008d06463-GIG
+1 < alt-svc: h3=":443"; ma=86400
+{"code":401,"data":{"message":"Authentication failed"},"meta":null}
+21:11:33.971 [main] ERROR com.intuit.karate - classpath:Prova_Karate/exer1.feature:27
+Then status 204
+status code was: 200, expected: 204, response time in milliseconds: 437, url: https://gorest.co.in/public-api/users/5710538, response: 
+{"code":401,"meta":null,"data":{"message":"Authentication failed"}}
+classpath:Prova_Karate/exer1.feature:27
+21:11:33.982 [main] INFO  com.intuit.karate - karate.env system property was: null 
+21:11:33.986 [main] DEBUG com.intuit.karate - request:
+1 > GET https://gorest.co.in/public-api/users/11
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:11:34.565 [main] DEBUG com.intuit.karate - response time in milliseconds: 579
+1 < 200
+1 < Date: Tue, 05 Dec 2023 00:11:34 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"b654e1cd0d3be5d471e57be8f71a8543"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: d22458c4-3cb0-4818-a633-a93c75075db1
+1 < x-runtime: 0.016516
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Z4iKknzEvWYvnvpNpoHtoL3DfBfzVV%2FXw%2Ff2JQ%2BPmMIMJ0qTH0ZJaFiSwkXDfBXCbqiN6js9p8bVVEnZz4Wu1p0uetw%2FGbyDrm8m0gaWIG3Ia8Thjw1aUQC191WZ1AM%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 83081293988a6d67-GIG
+1 < alt-svc: h3=":443"; ma=86400
+{"code":404,"data":{"message":"Resource not found"},"meta":null}
+21:11:34.568 [main] ERROR com.intuit.karate - classpath:Prova_Karate/exer1.feature:32
+Then status 404
+status code was: 200, expected: 404, response time in milliseconds: 579, url: https://gorest.co.in/public-api/users/11, response: 
+{"code":404,"meta":null,"data":{"message":"Resource not found"}}
+classpath:Prova_Karate/exer1.feature:32
+21:16:36.129 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:16:37.258 [main] INFO  com.intuit.karate - karate.env system property was: null 
+21:16:37.743 [main] DEBUG com.intuit.karate - request:
+1 > POST https://gorest.co.in/public-api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 90
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"gender":"male","name":"Novo Usuário","email":"novousuario@teste.com","status":"active"}
+
+21:16:38.553 [main] DEBUG com.intuit.karate - response time in milliseconds: 807
+1 < 200
+1 < Date: Tue, 05 Dec 2023 00:16:38 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"65ab5ef0fb80a32b1723c5368d8edb14"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: b7796708-e997-4a69-966b-d5f95c74a6b6
+1 < x-runtime: 0.008149
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=bHn263aTlN%2B8NOddmHZ1F7%2FrLWBOllHM5duYaW2aNPky%2BuBpP3XgAIa16WA%2FxFR5PU0gl5GVLRzYzWg8uI8oTaXDUvOuXJVN9jO3wY4PJJEstZ5PtlYaDK%2FrqCbl0tw%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 830819febe6b21d5-GIG
+1 < alt-svc: h3=":443"; ma=86400
+{"code":401,"data":{"message":"Authentication failed"},"meta":null}
+21:16:38.574 [main] ERROR com.intuit.karate - classpath:Prova_Karate/exer1.feature:8
+And match response.data.name == 'Novo Usuário'
+match failed: EQUALS
+  $ | actual path does not exist (STRING:STRING)
+  '#notpresent'
+  'Novo Usuário'
+
+classpath:Prova_Karate/exer1.feature:8
+21:16:38.607 [main] INFO  com.intuit.karate - karate.env system property was: null 
+21:16:38.612 [main] DEBUG com.intuit.karate - request:
+1 > GET https://gorest.co.in/public-api/users
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:16:39.872 [main] DEBUG com.intuit.karate - response time in milliseconds: 1259
+1 < 200
+1 < Date: Tue, 05 Dec 2023 00:16:39 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"cb60cd6faf671b9586e76122a5aceb05"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: edd38716-a232-4c4c-8c13-e9763f96a50d
+1 < x-runtime: 0.033838
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=3thOYiJfCVM0%2FKgNikZO65wW4dY6tCgmWNp2VgIu7wHS21iefTxt1Gdfk5vHu4fTiutKzaMGqzpVE3XB6P8nM1BGLGDQ5QhbQctTePZ3PqVBTdlgjig4MhyrYUMXxOU%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 83081a032fdb64cf-GIG
+1 < alt-svc: h3=":443"; ma=86400
+{"code":200,"data":[{"gender":"male","name":"Karthik Sethi","id":5710543,"email":"karthik_sethi@stroman-rowe.test","status":"active"},{"gender":"female","name":"Gautam Pilla","id":5710542,"email":"gautam_pilla@ullrich.example","status":"inactive"},{"gender":"female","name":"Anang Nehru","id":5710541,"email":"anang_nehru@hermann-lindgren.example","status":"active"},{"gender":"female","name":"Bankimchandra Kaur","id":5710540,"email":"bankimchandra_kaur@osinski-greenholt.example","status":"active"},{"gender":"female","name":"Chaturaanan Sharma","id":5710539,"email":"chaturaanan_sharma@mueller.test","status":"active"},{"gender":"male","name":"Kalinda Menon","id":5710538,"email":"kalinda_menon@lynch-veum.test","status":"active"},{"gender":"female","name":"Gaurang Khanna","id":5710537,"email":"gaurang_khanna@nikolaus-donnelly.example","status":"inactive"},{"gender":"female","name":"Anjushree Nayar","id":5710536,"email":"nayar_anjushree@damore.example","status":"active"},{"gender":"female","name":"Akshata Kakkar","id":5710535,"email":"kakkar_akshata@rohan.example","status":"inactive"},{"gender":"female","name":"Rohan Johar CPA","id":5710533,"email":"johar_rohan_cpa@schiller.test","status":"inactive"}],"meta":{"pagination":{"total":2671,"pages":268,"limit":10,"page":1}}}
+21:16:39.887 [main] ERROR com.intuit.karate - classpath:Prova_Karate/exer1.feature:14
+And match response.data.size > 0
+no step-definition method match found for: match response.data.size > 0
+classpath:Prova_Karate/exer1.feature:14
+21:16:39.900 [main] INFO  com.intuit.karate - karate.env system property was: null 
+21:16:39.905 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://gorest.co.in/public-api/users/5710543
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 40
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Novo Nome","status":"inactive"}
+
+21:16:41.103 [main] DEBUG com.intuit.karate - response time in milliseconds: 1196
+1 < 200
+1 < Date: Tue, 05 Dec 2023 00:16:41 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"65ab5ef0fb80a32b1723c5368d8edb14"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: 6d3c5f56-4126-4a34-882f-610c2a65ca79
+1 < x-runtime: 0.016610
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=dxx8g7ussUClIN2jJ1NX0oWqWHc%2BKXmmhwZwc0bGmrMvGB%2FQ835d0Sq1jsV0%2FWzafA%2BQ1Jq11u8bwzc3PFv2RndYM67NAFu2tGKL3ruhBkhb6vyHB5aQH2G2hxZi61Q%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 83081a0adb621d4e-GIG
+1 < alt-svc: h3=":443"; ma=86400
+{"code":401,"data":{"message":"Authentication failed"},"meta":null}
+21:16:41.110 [main] ERROR com.intuit.karate - classpath:Prova_Karate/exer1.feature:21
+And match response.data.name == 'Novo Nome'
+match failed: EQUALS
+  $ | actual path does not exist (STRING:STRING)
+  '#notpresent'
+  'Novo Nome'
+
+classpath:Prova_Karate/exer1.feature:21
+21:16:41.121 [main] INFO  com.intuit.karate - karate.env system property was: null 
+21:16:41.126 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://gorest.co.in/public-api/users/5710538
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:16:41.609 [main] DEBUG com.intuit.karate - response time in milliseconds: 483
+1 < 200
+1 < Date: Tue, 05 Dec 2023 00:16:41 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"65ab5ef0fb80a32b1723c5368d8edb14"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: 20ec2fe0-9ded-4414-9333-821f64b1f858
+1 < x-runtime: 0.015922
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=HFvbims%2FEio6LMQ%2BDVrVbLoXZLsq0Ro387n93vnkAP%2BdkbJpCTRFvp6kePR4YKkzhD18iUZy31PR7JtNzk%2FTzMZWvQ7DEha0LqD%2F8XtgPKyK%2FAAGnOY3jv4gFaz4XRo%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 83081a12999164a5-GIG
+1 < alt-svc: h3=":443"; ma=86400
+{"code":401,"data":{"message":"Authentication failed"},"meta":null}
+21:16:41.613 [main] ERROR com.intuit.karate - classpath:Prova_Karate/exer1.feature:27
+Then status 204
+status code was: 200, expected: 204, response time in milliseconds: 483, url: https://gorest.co.in/public-api/users/5710538, response: 
+{"code":401,"meta":null,"data":{"message":"Authentication failed"}}
+classpath:Prova_Karate/exer1.feature:27
+21:16:41.623 [main] INFO  com.intuit.karate - karate.env system property was: null 
+21:16:41.626 [main] DEBUG com.intuit.karate - request:
+1 > GET https://gorest.co.in/public-api/users/11
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:16:42.124 [main] DEBUG com.intuit.karate - response time in milliseconds: 498
+1 < 200
+1 < Date: Tue, 05 Dec 2023 00:16:42 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"b654e1cd0d3be5d471e57be8f71a8543"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: 07947397-4b83-4ddf-8ffd-57224f9ae83c
+1 < x-runtime: 0.020722
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=t9GIoSL70o%2BNwfnY3COhsgFljawVkr%2B8UhZjD3wkM1eHaLP69HJEZKyXwm%2Bj64v8ooRSuABW1ivu%2FxMaibwof3x4Vg6lcevNrIXmCR2OT65RC63KxRXh6wz3D7VKvAQ%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 83081a15ba3c6d72-GIG
+1 < alt-svc: h3=":443"; ma=86400
+{"code":404,"data":{"message":"Resource not found"},"meta":null}
+21:16:42.126 [main] ERROR com.intuit.karate - classpath:Prova_Karate/exer1.feature:32
+Then status 404
+status code was: 200, expected: 404, response time in milliseconds: 498, url: https://gorest.co.in/public-api/users/11, response: 
+{"code":404,"meta":null,"data":{"message":"Resource not found"}}
+classpath:Prova_Karate/exer1.feature:32
+23:04:34.345 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:04:35.952 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:04:36.658 [main] DEBUG com.intuit.karate - request:
+1 > POST https://gorest.co.in/public-api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 90
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"gender":"male","name":"Novo Usuário","email":"novousuario@teste.com","status":"active"}
+
+23:04:38.347 [main] DEBUG com.intuit.karate - response time in milliseconds: 1685
+1 < 200
+1 < Date: Tue, 05 Dec 2023 02:04:38 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"65ab5ef0fb80a32b1723c5368d8edb14"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: 0854f796-1a66-4ca0-88f7-40c68c5fa06a
+1 < x-runtime: 0.010400
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=MP0pqhF4Yc2rfR3VBqHpkMAR%2FzNwMRfY5H1Oc%2FQ6YD52AYFCVo5AbjUPewmT2LY3ezbfSZ1Uj8H%2BSR87%2BGNip%2F58A7pjlASD%2FHuo27vWb%2FtS%2ByMaURETMjxyE7gljXE%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8308b82e3fac6d42-GIG
+1 < alt-svc: h3=":443"; ma=86400
+{"code":401,"data":{"message":"Authentication failed"},"meta":null}
+23:04:38.390 [main] ERROR com.intuit.karate - classpath:Prova_Karate/exer1.feature:8
+And match response.data.name == 'Novo Usuário'
+match failed: EQUALS
+  $ | actual path does not exist (STRING:STRING)
+  '#notpresent'
+  'Novo Usuário'
+
+classpath:Prova_Karate/exer1.feature:8
+23:04:38.425 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:04:38.430 [main] DEBUG com.intuit.karate - request:
+1 > GET https://gorest.co.in/public-api/users
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:04:38.927 [main] DEBUG com.intuit.karate - response time in milliseconds: 495
+1 < 200
+1 < Date: Tue, 05 Dec 2023 02:04:39 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"3a6251925a17382c1ab8cba29b8b22e7"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: 1d45467a-b154-4643-9ee3-b54cc6ad1b6c
+1 < x-runtime: 0.032369
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=VSBXOggfW%2FZ1jsrzhzg%2Fx9rDXoBgGfwrc93GL6Vc7psxYLUvOpQOafifX3kUzwsb3K342YNxMn7mSuePqr0FBWRrPwyPw%2BkhvJN8jYFuVm%2BnDe1C2f0SGP%2B63JcVwu4%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8308b8363fea64a8-GIG
+1 < alt-svc: h3=":443"; ma=86400
+{"code":200,"data":[{"gender":"male","name":"Karthik Sethi","id":5710543,"email":"karthik_sethi@stroman-rowe.test","status":"active"},{"gender":"female","name":"Bankimchandra Kaur","id":5710540,"email":"bankimchandra_kaur@osinski-greenholt.example","status":"active"},{"gender":"female","name":"Chaturaanan Sharma","id":5710539,"email":"chaturaanan_sharma@mueller.test","status":"active"},{"gender":"male","name":"Kalinda Menon","id":5710538,"email":"kalinda_menon@lynch-veum.test","status":"active"},{"gender":"female","name":"Gaurang Khanna","id":5710537,"email":"gaurang_khanna@nikolaus-donnelly.example","status":"inactive"},{"gender":"female","name":"Anjushree Nayar","id":5710536,"email":"nayar_anjushree@damore.example","status":"active"},{"gender":"female","name":"Akshata Kakkar","id":5710535,"email":"kakkar_akshata@rohan.example","status":"inactive"},{"gender":"female","name":"Rohan Johar CPA","id":5710533,"email":"johar_rohan_cpa@schiller.test","status":"inactive"},{"gender":"female","name":"Krishnadasa Pandey","id":5710532,"email":"pandey_krishnadasa@ledner-carroll.example","status":"inactive"},{"gender":"female","name":"Smriti Sharma II","id":5710531,"email":"smriti_sharma_ii@baumbach.test","status":"inactive"}],"meta":{"pagination":{"total":2668,"pages":267,"limit":10,"page":1}}}
+23:04:38.931 [main] ERROR com.intuit.karate - classpath:Prova_Karate/exer1.feature:14
+And match response.data.size > 0
+no step-definition method match found for: match response.data.size > 0
+classpath:Prova_Karate/exer1.feature:14
+23:04:38.949 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:04:38.958 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://gorest.co.in/public-api/users/5710543
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 40
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Novo Nome","status":"inactive"}
+
+23:04:40.193 [main] DEBUG com.intuit.karate - response time in milliseconds: 1232
+1 < 200
+1 < Date: Tue, 05 Dec 2023 02:04:40 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"65ab5ef0fb80a32b1723c5368d8edb14"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: 315f8243-1702-4798-998f-dbccc460de4b
+1 < x-runtime: 0.025595
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=3xvzKRUwWqyOh98LpNZNSBvXziPJT2jVEX%2B9QsGJylEovIVZ84RMA2oZ%2FvJVq1DyWPe%2F725c6e4MuNm6Puier1Geq%2FwpmDbeKkx1fDIAvGcDHS%2FE3bwPOZXZFMC%2BZ80%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8308b839ae9c1d46-GIG
+1 < alt-svc: h3=":443"; ma=86400
+{"code":401,"data":{"message":"Authentication failed"},"meta":null}
+23:04:40.198 [main] ERROR com.intuit.karate - classpath:Prova_Karate/exer1.feature:21
+And match response.data.name == 'Novo Nome'
+match failed: EQUALS
+  $ | actual path does not exist (STRING:STRING)
+  '#notpresent'
+  'Novo Nome'
+
+classpath:Prova_Karate/exer1.feature:21
+23:04:40.223 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:04:40.234 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://gorest.co.in/public-api/users/5710538
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:04:41.376 [main] DEBUG com.intuit.karate - response time in milliseconds: 1141
+1 < 200
+1 < Date: Tue, 05 Dec 2023 02:04:41 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"65ab5ef0fb80a32b1723c5368d8edb14"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: 3c424510-8d70-401a-be4e-4dae80da7122
+1 < x-runtime: 0.016585
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Ur%2FUnX1jBYWjc%2FvZhLsCa%2FphGMyEgod5rltKDk1rQHeYsq84dXnLusG5dKB0V1CM3cEwBoL76OJz976q5i7NMsmGk%2B1In5uUfHfkqPT3oDx%2FsrfWY6ddBZxBZ7FUZec%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8308b8416e7764f1-GIG
+1 < alt-svc: h3=":443"; ma=86400
+{"code":401,"data":{"message":"Authentication failed"},"meta":null}
+23:04:41.380 [main] ERROR com.intuit.karate - classpath:Prova_Karate/exer1.feature:27
+Then status 204
+status code was: 200, expected: 204, response time in milliseconds: 1141, url: https://gorest.co.in/public-api/users/5710538, response: 
+{"code":401,"meta":null,"data":{"message":"Authentication failed"}}
+classpath:Prova_Karate/exer1.feature:27
+23:04:41.394 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:04:41.399 [main] DEBUG com.intuit.karate - request:
+1 > GET https://gorest.co.in/public-api/users/11
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:04:41.883 [main] DEBUG com.intuit.karate - response time in milliseconds: 482
+1 < 200
+1 < Date: Tue, 05 Dec 2023 02:04:42 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"b654e1cd0d3be5d471e57be8f71a8543"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: d4583f4c-09d1-4651-8be6-1a609d9305f7
+1 < x-runtime: 0.029088
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=3nz4KRijHYx91luMHGLQMnr3hrKrfyqOflKnyFOWxRylk9k7AjIPt8HldEt5jk2YcrRaoDEfpQj2tp2mFxOqUEhq2eUu%2FhqNZGp43MbtWe9Eu9XUyAmbSaUyLJWNCEA%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8308b848afbe2767-GIG
+1 < alt-svc: h3=":443"; ma=86400
+{"code":404,"data":{"message":"Resource not found"},"meta":null}
+23:04:41.886 [main] ERROR com.intuit.karate - classpath:Prova_Karate/exer1.feature:32
+Then status 404
+status code was: 200, expected: 404, response time in milliseconds: 482, url: https://gorest.co.in/public-api/users/11, response: 
+{"code":404,"meta":null,"data":{"message":"Resource not found"}}
+classpath:Prova_Karate/exer1.feature:32
+23:05:28.990 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:05:31.184 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:05:32.140 [main] DEBUG com.intuit.karate - request:
+1 > POST https://gorest.co.in/public-api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 90
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"gender":"male","name":"Novo Usuário","email":"novousuario@teste.com","status":"active"}
+
+23:05:32.974 [main] DEBUG com.intuit.karate - response time in milliseconds: 832
+1 < 200
+1 < Date: Tue, 05 Dec 2023 02:05:33 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"65ab5ef0fb80a32b1723c5368d8edb14"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: bb22d826-8e36-46a7-ad7d-eeadcd3e2126
+1 < x-runtime: 0.007404
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=GQXGkhNjnfd%2Br%2Bqq9uHBpEXe%2BtUBwtDeVqV5EBO9rT9UU23h7TQxkxAXNl6d97gi2TYLwalb7bC8VgCPsFz4VtE1eLswzgFJny4JHeefnflEvjLjadSni6JVeChdwgs%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8308b987fd7a648d-GIG
+1 < alt-svc: h3=":443"; ma=86400
+{"code":401,"data":{"message":"Authentication failed"},"meta":null}
+23:05:32.988 [main] ERROR com.intuit.karate - classpath:Prova_Karate/exer1.feature:7
+Then status 201
+status code was: 200, expected: 201, response time in milliseconds: 832, url: https://gorest.co.in/public-api/users, response: 
+{"code":401,"meta":null,"data":{"message":"Authentication failed"}}
+classpath:Prova_Karate/exer1.feature:7
+23:05:33.037 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:05:33.041 [main] DEBUG com.intuit.karate - request:
+1 > GET https://gorest.co.in/public-api/users
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:05:33.555 [main] DEBUG com.intuit.karate - response time in milliseconds: 511
+1 < 200
+1 < Date: Tue, 05 Dec 2023 02:05:33 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"3a6251925a17382c1ab8cba29b8b22e7"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: c8ba39a6-7963-4c10-bc27-6e5a2a5849c6
+1 < x-runtime: 0.041484
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=4Dtp94KgS2gsBzuVE1vKaqcWOZfRVfNSzVOp1glyuBKfwG56fIi4g6HnZJZAYe6RA5UYyp7iAmJGx3PMWgmAuni8NC2R2rS%2FWcZXq4Y8yZrsGVFt12qFIGHOiUJ0zlA%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8308b98b7f8e72e3-GIG
+1 < alt-svc: h3=":443"; ma=86400
+{"code":200,"data":[{"gender":"male","name":"Karthik Sethi","id":5710543,"email":"karthik_sethi@stroman-rowe.test","status":"active"},{"gender":"female","name":"Bankimchandra Kaur","id":5710540,"email":"bankimchandra_kaur@osinski-greenholt.example","status":"active"},{"gender":"female","name":"Chaturaanan Sharma","id":5710539,"email":"chaturaanan_sharma@mueller.test","status":"active"},{"gender":"male","name":"Kalinda Menon","id":5710538,"email":"kalinda_menon@lynch-veum.test","status":"active"},{"gender":"female","name":"Gaurang Khanna","id":5710537,"email":"gaurang_khanna@nikolaus-donnelly.example","status":"inactive"},{"gender":"female","name":"Anjushree Nayar","id":5710536,"email":"nayar_anjushree@damore.example","status":"active"},{"gender":"female","name":"Akshata Kakkar","id":5710535,"email":"kakkar_akshata@rohan.example","status":"inactive"},{"gender":"female","name":"Rohan Johar CPA","id":5710533,"email":"johar_rohan_cpa@schiller.test","status":"inactive"},{"gender":"female","name":"Krishnadasa Pandey","id":5710532,"email":"pandey_krishnadasa@ledner-carroll.example","status":"inactive"},{"gender":"female","name":"Smriti Sharma II","id":5710531,"email":"smriti_sharma_ii@baumbach.test","status":"inactive"}],"meta":{"pagination":{"total":2668,"pages":267,"limit":10,"page":1}}}
+23:05:33.562 [main] ERROR com.intuit.karate - classpath:Prova_Karate/exer1.feature:14
+And match response.data.size > 0
+no step-definition method match found for: match response.data.size > 0
+classpath:Prova_Karate/exer1.feature:14
+23:05:33.589 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:05:33.600 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://gorest.co.in/public-api/users/5710543
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 40
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Novo Nome","status":"inactive"}
+
+23:05:34.133 [main] DEBUG com.intuit.karate - response time in milliseconds: 532
+1 < 200
+1 < Date: Tue, 05 Dec 2023 02:05:34 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"65ab5ef0fb80a32b1723c5368d8edb14"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: 64f2971e-d115-49ce-8601-5613ed3a9d87
+1 < x-runtime: 0.027281
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=2tO8pgpDJfy42egfWowhJC3TDU%2Fx5%2FQJdvY%2BSni2RmBsVT9KNscNi1qIpQkfCUbkBsNDl5PleEsQWppM4c4y%2FXeuRbFsyUFJdcMi4xPd1lhTpSzy0BfTV1pnGtDoA58%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8308b98f3a2e2677-GIG
+1 < alt-svc: h3=":443"; ma=86400
+{"code":401,"data":{"message":"Authentication failed"},"meta":null}
+23:05:34.161 [main] ERROR com.intuit.karate - classpath:Prova_Karate/exer1.feature:21
+And match response.data.name == 'Novo Nome'
+match failed: EQUALS
+  $ | actual path does not exist (STRING:STRING)
+  '#notpresent'
+  'Novo Nome'
+
+classpath:Prova_Karate/exer1.feature:21
+23:05:34.183 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:05:34.189 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://gorest.co.in/public-api/users/5710538
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:05:35.608 [main] DEBUG com.intuit.karate - response time in milliseconds: 1418
+1 < 200
+1 < Date: Tue, 05 Dec 2023 02:05:35 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"65ab5ef0fb80a32b1723c5368d8edb14"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: c175f57c-6a38-4022-8434-062699c4df39
+1 < x-runtime: 0.019064
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=%2FXzWdS7SZbXHCi%2FXnCGXsNpl8PRyX%2FISGlN%2FmAam10SxB17XkUmkCjuTMnHxDFjWrdXRUQQG7izNRil05rqg7JFZJDtsrsHOOrE55nhr50CLG6%2BK1JfiPafu2%2Fx2CBM%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8308b992996c1f80-GIG
+1 < alt-svc: h3=":443"; ma=86400
+{"code":401,"data":{"message":"Authentication failed"},"meta":null}
+23:05:35.612 [main] ERROR com.intuit.karate - classpath:Prova_Karate/exer1.feature:27
+Then status 204
+status code was: 200, expected: 204, response time in milliseconds: 1418, url: https://gorest.co.in/public-api/users/5710538, response: 
+{"code":401,"meta":null,"data":{"message":"Authentication failed"}}
+classpath:Prova_Karate/exer1.feature:27
+23:05:35.631 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:05:35.638 [main] DEBUG com.intuit.karate - request:
+1 > GET https://gorest.co.in/public-api/users/11
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:05:36.233 [main] DEBUG com.intuit.karate - response time in milliseconds: 594
+1 < 200
+1 < Date: Tue, 05 Dec 2023 02:05:36 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"b654e1cd0d3be5d471e57be8f71a8543"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: f0d6da76-91b8-4a95-86f2-25f16953e988
+1 < x-runtime: 0.025484
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=3njw0KEDXLCRkM421EUjbTwkMERmmAU7gXQr7f%2FWmo%2FoC6BZXkIAOKb6rDqU8Ft%2FUXSR6yWxN6VZ22CnO%2BgqXBGBv4rqdQxkOmRiGxjn77fj%2BCQonI5JfyH%2BCpv3Y0w%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8308b99c5a3b25f9-GIG
+1 < alt-svc: h3=":443"; ma=86400
+{"code":404,"data":{"message":"Resource not found"},"meta":null}
+23:05:36.236 [main] ERROR com.intuit.karate - classpath:Prova_Karate/exer1.feature:32
+Then status 404
+status code was: 200, expected: 404, response time in milliseconds: 594, url: https://gorest.co.in/public-api/users/11, response: 
+{"code":404,"meta":null,"data":{"message":"Resource not found"}}
+classpath:Prova_Karate/exer1.feature:32
+23:08:19.869 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:08:22.331 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:08:23.229 [main] DEBUG com.intuit.karate - request:
+1 > POST https://gorest.co.in/public-api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 110
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"data.gender":"male","data.email":"novousuario@teste.com","data.status":"active","data.name":"Novo Usuário"}
+
+23:08:24.103 [main] DEBUG com.intuit.karate - response time in milliseconds: 871
+1 < 200
+1 < Date: Tue, 05 Dec 2023 02:08:24 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"65ab5ef0fb80a32b1723c5368d8edb14"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: 786a9790-45cf-4cd8-aecc-e5b134e1834b
+1 < x-runtime: 0.012954
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=tJ5rSIkIC4sLXoXhHJiwpL9V1jLOC%2F0r3euEq7TqXDleyfyk9lVGF8W7RUavU40Gb69QEkQviAKqbsJFCNH99%2FMy3J4Z27qu7dTi0Ung%2FiQ%2BxzP%2FGTobHlovEEMdsqI%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8308bdb59b6b64a9-GIG
+1 < alt-svc: h3=":443"; ma=86400
+{"code":401,"data":{"message":"Authentication failed"},"meta":null}
+23:08:24.170 [main] ERROR com.intuit.karate - classpath:Prova_Karate/exer1.feature:8
+And match $.data.name == 'Novo Usuário'
+match failed: EQUALS
+  $ | actual path does not exist (STRING:STRING)
+  '#notpresent'
+  'Novo Usuário'
+
+classpath:Prova_Karate/exer1.feature:8
+23:08:24.333 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:08:24.348 [main] DEBUG com.intuit.karate - request:
+1 > GET https://gorest.co.in/public-api/users
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:08:24.844 [main] DEBUG com.intuit.karate - response time in milliseconds: 493
+1 < 200
+1 < Date: Tue, 05 Dec 2023 02:08:25 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"3a6251925a17382c1ab8cba29b8b22e7"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: 8a3ec349-361e-435b-a918-5a8bd6fffde9
+1 < x-runtime: 0.046837
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Ufhht4OiUS6UixTCWbaCXfbdCJXjVokZTs64w3X31TxFJayTLsjINloqpDK5NSdy8FObPlZ4OBezSu0CaimKLV5R6tBkcPEFioqm7rBH6VYhPTCj%2Fa%2BlRkAWCOi%2FweQ%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8308bdba1bb264db-GIG
+1 < alt-svc: h3=":443"; ma=86400
+{"code":200,"data":[{"gender":"male","name":"Karthik Sethi","id":5710543,"email":"karthik_sethi@stroman-rowe.test","status":"active"},{"gender":"female","name":"Bankimchandra Kaur","id":5710540,"email":"bankimchandra_kaur@osinski-greenholt.example","status":"active"},{"gender":"female","name":"Chaturaanan Sharma","id":5710539,"email":"chaturaanan_sharma@mueller.test","status":"active"},{"gender":"male","name":"Kalinda Menon","id":5710538,"email":"kalinda_menon@lynch-veum.test","status":"active"},{"gender":"female","name":"Gaurang Khanna","id":5710537,"email":"gaurang_khanna@nikolaus-donnelly.example","status":"inactive"},{"gender":"female","name":"Anjushree Nayar","id":5710536,"email":"nayar_anjushree@damore.example","status":"active"},{"gender":"female","name":"Akshata Kakkar","id":5710535,"email":"kakkar_akshata@rohan.example","status":"inactive"},{"gender":"female","name":"Rohan Johar CPA","id":5710533,"email":"johar_rohan_cpa@schiller.test","status":"inactive"},{"gender":"female","name":"Krishnadasa Pandey","id":5710532,"email":"pandey_krishnadasa@ledner-carroll.example","status":"inactive"},{"gender":"female","name":"Smriti Sharma II","id":5710531,"email":"smriti_sharma_ii@baumbach.test","status":"inactive"}],"meta":{"pagination":{"total":2668,"pages":267,"limit":10,"page":1}}}
+23:08:24.848 [main] ERROR com.intuit.karate - classpath:Prova_Karate/exer1.feature:14
+And match response.data.size > 0
+no step-definition method match found for: match response.data.size > 0
+classpath:Prova_Karate/exer1.feature:14
+23:08:24.868 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:08:24.877 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://gorest.co.in/public-api/users/5710543
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 40
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Novo Nome","status":"inactive"}
+
+23:08:25.357 [main] DEBUG com.intuit.karate - response time in milliseconds: 478
+1 < 200
+1 < Date: Tue, 05 Dec 2023 02:08:25 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"65ab5ef0fb80a32b1723c5368d8edb14"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: f67d37ba-e2b0-4c34-a8ab-bc74807d7081
+1 < x-runtime: 0.026268
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=%2F00k21pYiv1MXE67qrwulp5uXBF2RMg97VhwurbVN%2BJ4lM6f4P4vO2jTrT4TADygCz%2BVTdxQa2p2C3LW8d5mLPsCU56uiJS%2BUcJEVVBnQHq7OokDejvpN6eGHcPxT7k%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8308bdbd5a5425f7-GIG
+1 < alt-svc: h3=":443"; ma=86400
+{"code":401,"data":{"message":"Authentication failed"},"meta":null}
+23:08:25.363 [main] ERROR com.intuit.karate - classpath:Prova_Karate/exer1.feature:21
+And match response.data.name == 'Novo Nome'
+match failed: EQUALS
+  $ | actual path does not exist (STRING:STRING)
+  '#notpresent'
+  'Novo Nome'
+
+classpath:Prova_Karate/exer1.feature:21
+23:08:25.398 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:08:25.418 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://gorest.co.in/public-api/users/5710538
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:08:25.930 [main] DEBUG com.intuit.karate - response time in milliseconds: 509
+1 < 200
+1 < Date: Tue, 05 Dec 2023 02:08:26 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"65ab5ef0fb80a32b1723c5368d8edb14"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: 7a1fb6d6-2205-4372-ae8d-b0062760d934
+1 < x-runtime: 0.026241
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=8glvdoolQpSGP39sIKd3DQPb7cvZHjvPMp1o4w3T%2BdaqBicNJB1p442pDbXcVigIX3ABcWsrGnUaq9%2B33IQMOhdl5Gyc7Sf3E8b9cZhbedYCZJMFD9vxJfGeGvp4SkY%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8308bdc0eefc2628-GIG
+1 < alt-svc: h3=":443"; ma=86400
+{"code":401,"data":{"message":"Authentication failed"},"meta":null}
+23:08:25.934 [main] ERROR com.intuit.karate - classpath:Prova_Karate/exer1.feature:27
+Then status 204
+status code was: 200, expected: 204, response time in milliseconds: 509, url: https://gorest.co.in/public-api/users/5710538, response: 
+{"code":401,"meta":null,"data":{"message":"Authentication failed"}}
+classpath:Prova_Karate/exer1.feature:27
+23:08:25.961 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:08:25.972 [main] DEBUG com.intuit.karate - request:
+1 > GET https://gorest.co.in/public-api/users/11
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:08:26.475 [main] DEBUG com.intuit.karate - response time in milliseconds: 500
+1 < 200
+1 < Date: Tue, 05 Dec 2023 02:08:26 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"b654e1cd0d3be5d471e57be8f71a8543"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: 184f1967-3062-47e7-911f-2652523906af
+1 < x-runtime: 0.019413
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=c0To0XeMMvaRb3%2FBlpLSgY5JDrNm7%2FHSEJGkE%2BxNyopbtBYWkhvjmenSeNCtGAMQIek2BRr3ijVPSXuHeuoWtKdQi9FDHV3PW53fXf28sk2mSl%2BJbScdUs6jszq9RmE%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8308bdc46bb86d42-GIG
+1 < alt-svc: h3=":443"; ma=86400
+{"code":404,"data":{"message":"Resource not found"},"meta":null}
+23:08:26.478 [main] ERROR com.intuit.karate - classpath:Prova_Karate/exer1.feature:32
+Then status 404
+status code was: 200, expected: 404, response time in milliseconds: 500, url: https://gorest.co.in/public-api/users/11, response: 
+{"code":404,"meta":null,"data":{"message":"Resource not found"}}
+classpath:Prova_Karate/exer1.feature:32
+23:09:54.867 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:09:56.312 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:09:56.951 [main] DEBUG com.intuit.karate - request:
+1 > POST https://gorest.co.in/public-api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 110
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"data.gender":"male","data.email":"novousuario@teste.com","data.status":"active","data.name":"Novo Usuário"}
+
+23:09:57.911 [main] DEBUG com.intuit.karate - response time in milliseconds: 957
+1 < 200
+1 < Date: Tue, 05 Dec 2023 02:09:58 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"65ab5ef0fb80a32b1723c5368d8edb14"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: 4b28a715-d1c1-44c0-98ec-91ed17e6e961
+1 < x-runtime: 0.014999
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=PBegjN%2FHTVdwTXwhnUOUf%2FhfmIogVTDJhH476%2FRYKEvccAGxzzs3usTDrBU4f4aUTbm40bbjMj6DuVfnEempiN9jUfo5Jvad9kkFg%2F9ihoSgSGXIIviSn8kRpR%2FuPCc%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8308bfffc9aa6d46-GIG
+1 < alt-svc: h3=":443"; ma=86400
+{"code":401,"data":{"message":"Authentication failed"},"meta":null}
+23:09:57.936 [main] ERROR com.intuit.karate - classpath:Prova_Karate/exer1.feature:8
+And match $.data.name == 'Novo Usuário'
+match failed: EQUALS
+  $ | actual path does not exist (STRING:STRING)
+  '#notpresent'
+  'Novo Usuário'
+
+classpath:Prova_Karate/exer1.feature:8
+23:09:57.986 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:09:57.990 [main] DEBUG com.intuit.karate - request:
+1 > GET https://gorest.co.in/public-api/users
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:09:58.513 [main] DEBUG com.intuit.karate - response time in milliseconds: 522
+1 < 200
+1 < Date: Tue, 05 Dec 2023 02:09:58 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"3a6251925a17382c1ab8cba29b8b22e7"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: f37f4510-1aa7-4891-a0b8-90c69435b92e
+1 < x-runtime: 0.045553
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=hIjTgpq7SOHUAMPYmwvOQHKpJlcKvKagkUpXvRrwvfILrBgkdaxBlnqb%2FQy2OrTsjl10%2Bpax6wqMp3gOvYvVBQaDnAazRmqrCXuwnLZXDfeRa6RssWIR4XD%2Bjm0uu4c%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8308c003694a64e5-GIG
+1 < alt-svc: h3=":443"; ma=86400
+{"code":200,"data":[{"gender":"male","name":"Karthik Sethi","id":5710543,"email":"karthik_sethi@stroman-rowe.test","status":"active"},{"gender":"female","name":"Bankimchandra Kaur","id":5710540,"email":"bankimchandra_kaur@osinski-greenholt.example","status":"active"},{"gender":"female","name":"Chaturaanan Sharma","id":5710539,"email":"chaturaanan_sharma@mueller.test","status":"active"},{"gender":"male","name":"Kalinda Menon","id":5710538,"email":"kalinda_menon@lynch-veum.test","status":"active"},{"gender":"female","name":"Gaurang Khanna","id":5710537,"email":"gaurang_khanna@nikolaus-donnelly.example","status":"inactive"},{"gender":"female","name":"Anjushree Nayar","id":5710536,"email":"nayar_anjushree@damore.example","status":"active"},{"gender":"female","name":"Akshata Kakkar","id":5710535,"email":"kakkar_akshata@rohan.example","status":"inactive"},{"gender":"female","name":"Rohan Johar CPA","id":5710533,"email":"johar_rohan_cpa@schiller.test","status":"inactive"},{"gender":"female","name":"Krishnadasa Pandey","id":5710532,"email":"pandey_krishnadasa@ledner-carroll.example","status":"inactive"},{"gender":"female","name":"Smriti Sharma II","id":5710531,"email":"smriti_sharma_ii@baumbach.test","status":"inactive"}],"meta":{"pagination":{"total":2668,"pages":267,"limit":10,"page":1}}}
+23:09:58.518 [main] ERROR com.intuit.karate - classpath:Prova_Karate/exer1.feature:14
+And match response.data.size > 0
+no step-definition method match found for: match response.data.size > 0
+classpath:Prova_Karate/exer1.feature:14
+23:09:58.610 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:09:58.631 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://gorest.co.in/public-api/users/5710543
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 40
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Novo Nome","status":"inactive"}
+
+23:09:59.132 [main] DEBUG com.intuit.karate - response time in milliseconds: 497
+1 < 200
+1 < Date: Tue, 05 Dec 2023 02:09:59 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"65ab5ef0fb80a32b1723c5368d8edb14"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: 1b24586a-90a8-4e06-8b1c-627d384a2e8c
+1 < x-runtime: 0.018303
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=d9XSLWWwhidUjIK3UtH3emnaJGGQMsBUa3ofHQTW2Zv0Fy1QSVL5P5a6pT5E4FDnElNd6y2droIBaqtd8%2Ble50jZgkqJ5AeBwUMA91dU%2FhuvZC06AEfGgZTMCxvakc0%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8308c0078e036d76-GIG
+1 < alt-svc: h3=":443"; ma=86400
+{"code":401,"data":{"message":"Authentication failed"},"meta":null}
+23:09:59.138 [main] ERROR com.intuit.karate - classpath:Prova_Karate/exer1.feature:21
+And match response.data.name == 'Novo Nome'
+match failed: EQUALS
+  $ | actual path does not exist (STRING:STRING)
+  '#notpresent'
+  'Novo Nome'
+
+classpath:Prova_Karate/exer1.feature:21
+23:09:59.155 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:09:59.166 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://gorest.co.in/public-api/users/5710538
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:09:59.630 [main] DEBUG com.intuit.karate - response time in milliseconds: 464
+1 < 200
+1 < Date: Tue, 05 Dec 2023 02:09:59 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"65ab5ef0fb80a32b1723c5368d8edb14"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: 9baf3e48-baca-456f-92b0-f2a6d3c01f41
+1 < x-runtime: 0.022256
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=7ETK74Hu9Yx6r0vFrMww5bm3cP94%2F2aWyUtVzI8FmSVulcCZSGDh5%2B9qak38LlvSX2SzxaR3LERxfkK%2BqWqwtexgdtK%2FIBAq56csXwI3X8GRCdH90hKkq2D14igiee4%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8308c00aacf16d7b-GIG
+1 < alt-svc: h3=":443"; ma=86400
+{"code":401,"data":{"message":"Authentication failed"},"meta":null}
+23:09:59.646 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:09:59.651 [main] DEBUG com.intuit.karate - request:
+1 > GET https://gorest.co.in/public-api/users/11
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:10:00.137 [main] DEBUG com.intuit.karate - response time in milliseconds: 485
+1 < 200
+1 < Date: Tue, 05 Dec 2023 02:10:00 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"b654e1cd0d3be5d471e57be8f71a8543"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: 600f8d65-6a85-4597-b779-c62aace6512a
+1 < x-runtime: 0.022701
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=eNaPGV0mcZFmmGu6EI4oIOyPFvIDzcYg0PXrxDZ99cLnj1fPDZV321ZtU8HT7kRBAORX3fY6hdkHhr%2BdFdvVUsdnYv6wAOJWoiC42%2Fygz4J2xk5%2F0F5%2Fx6OxGTZsBxQ%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8308c00dccda72d4-GIG
+1 < alt-svc: h3=":443"; ma=86400
+{"code":404,"data":{"message":"Resource not found"},"meta":null}
+23:10:00.142 [main] ERROR com.intuit.karate - classpath:Prova_Karate/exer1.feature:32
+Then status 404
+status code was: 200, expected: 404, response time in milliseconds: 485, url: https://gorest.co.in/public-api/users/11, response: 
+{"code":404,"meta":null,"data":{"message":"Resource not found"}}
+classpath:Prova_Karate/exer1.feature:32
+23:11:59.484 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:12:01.077 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:12:01.801 [main] DEBUG com.intuit.karate - request:
+1 > POST https://gorest.co.in/public-api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 110
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"data.gender":"male","data.email":"novousuario@teste.com","data.status":"active","data.name":"Novo Usuário"}
+
+23:12:03.262 [main] DEBUG com.intuit.karate - response time in milliseconds: 1458
+1 < 200
+1 < Date: Tue, 05 Dec 2023 02:12:03 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"65ab5ef0fb80a32b1723c5368d8edb14"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: af18d6ce-97ff-4da1-a2b0-ca3ea1940109
+1 < x-runtime: 0.008246
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=kuKCjHwMUo3wtzj65MaidQiI7CvJCB2Pzww1eqaNsWnTz6Jd1p6ygp3c4Y%2F2zKiWJA%2FMk11lLUaNs9QZvdTkPWMcE9ZwIWUNDnY1meV633bFGdQjXNTIcUguk%2BqxpNc%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8308c30b596164df-GIG
+1 < alt-svc: h3=":443"; ma=86400
+{"code":401,"data":{"message":"Authentication failed"},"meta":null}
+23:12:03.307 [main] ERROR com.intuit.karate - classpath:Prova_Karate/exer1.feature:8
+And match $.data.name == 'Novo Usuário'
+match failed: EQUALS
+  $ | actual path does not exist (STRING:STRING)
+  '#notpresent'
+  'Novo Usuário'
+
+classpath:Prova_Karate/exer1.feature:8
+23:12:03.362 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:12:03.369 [main] DEBUG com.intuit.karate - request:
+1 > GET https://gorest.co.in/public-api/users
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:12:03.902 [main] DEBUG com.intuit.karate - response time in milliseconds: 530
+1 < 200
+1 < Date: Tue, 05 Dec 2023 02:12:04 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"3a6251925a17382c1ab8cba29b8b22e7"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: fec77e92-1186-4379-baf7-08d9e86e9436
+1 < x-runtime: 0.030259
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=a6dnuvbGC9TyOFyNN49fvhEEiEvkrkXZ4kEa%2BmKMWvFhogF95QyNjrPt9G5nOJwHUjwevRI4KclpY5vYZ41cYZ%2FzYsGsGb89%2BH6laOx0Z9%2BQC9R4k%2BPsLiS3ASH5Vbc%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8308c3134e526469-GIG
+1 < alt-svc: h3=":443"; ma=86400
+{"code":200,"data":[{"gender":"male","name":"Karthik Sethi","id":5710543,"email":"karthik_sethi@stroman-rowe.test","status":"active"},{"gender":"female","name":"Bankimchandra Kaur","id":5710540,"email":"bankimchandra_kaur@osinski-greenholt.example","status":"active"},{"gender":"female","name":"Chaturaanan Sharma","id":5710539,"email":"chaturaanan_sharma@mueller.test","status":"active"},{"gender":"male","name":"Kalinda Menon","id":5710538,"email":"kalinda_menon@lynch-veum.test","status":"active"},{"gender":"female","name":"Gaurang Khanna","id":5710537,"email":"gaurang_khanna@nikolaus-donnelly.example","status":"inactive"},{"gender":"female","name":"Anjushree Nayar","id":5710536,"email":"nayar_anjushree@damore.example","status":"active"},{"gender":"female","name":"Akshata Kakkar","id":5710535,"email":"kakkar_akshata@rohan.example","status":"inactive"},{"gender":"female","name":"Rohan Johar CPA","id":5710533,"email":"johar_rohan_cpa@schiller.test","status":"inactive"},{"gender":"female","name":"Krishnadasa Pandey","id":5710532,"email":"pandey_krishnadasa@ledner-carroll.example","status":"inactive"},{"gender":"female","name":"Smriti Sharma II","id":5710531,"email":"smriti_sharma_ii@baumbach.test","status":"inactive"}],"meta":{"pagination":{"total":2668,"pages":267,"limit":10,"page":1}}}
+23:12:03.908 [main] ERROR com.intuit.karate - classpath:Prova_Karate/exer1.feature:14
+And match response.data.size > 0
+no step-definition method match found for: match response.data.size > 0
+classpath:Prova_Karate/exer1.feature:14
+23:12:03.928 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:12:03.940 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://gorest.co.in/public-api/users/5710543
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 40
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Novo Nome","status":"inactive"}
+
+23:12:04.394 [main] DEBUG com.intuit.karate - response time in milliseconds: 454
+1 < 200
+1 < Date: Tue, 05 Dec 2023 02:12:04 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"65ab5ef0fb80a32b1723c5368d8edb14"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: 6c515b2f-22ea-4363-8081-290433a84838
+1 < x-runtime: 0.017171
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=1eu8j6D%2BNR8GlyQXzjpb8BUqdxPm39xBTTf5VkZmTaFKpY0RPnlpeAaK0bnRQLDs%2B3BLZDT2R%2FwiwgS6wb9Efahq1olMB06ljILI35ba0vl32SlmQm5biOsoDnGPG9o%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8308c3167f352571-GIG
+1 < alt-svc: h3=":443"; ma=86400
+{"code":401,"data":{"message":"Authentication failed"},"meta":null}
+23:12:04.399 [main] ERROR com.intuit.karate - classpath:Prova_Karate/exer1.feature:21
+And match response.data.name == 'Novo Nome'
+match failed: EQUALS
+  $ | actual path does not exist (STRING:STRING)
+  '#notpresent'
+  'Novo Nome'
+
+classpath:Prova_Karate/exer1.feature:21
+23:12:04.421 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:12:04.427 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://gorest.co.in/public-api/users/5710538
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:12:04.895 [main] DEBUG com.intuit.karate - response time in milliseconds: 468
+1 < 200
+1 < Date: Tue, 05 Dec 2023 02:12:05 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"65ab5ef0fb80a32b1723c5368d8edb14"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: b95091b3-085d-4210-99f8-a01ff1e239f7
+1 < x-runtime: 0.020002
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=%2FjbiJ%2B1n8IPnCIXi5Y0BSjuOVll4so6buRHijCSE0Zlm06DmcaCQjBA1Whc9735UDQQljQ5UieVPrE0p9%2F9AFjXxtF8VncRXS7RNF9183rTiXoHZbX%2BLQ8j3d6j%2BKL4%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8308c3198cb66475-GIG
+1 < alt-svc: h3=":443"; ma=86400
+{"code":401,"data":{"message":"Authentication failed"},"meta":null}
+23:12:04.911 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:12:04.916 [main] DEBUG com.intuit.karate - request:
+1 > GET https://gorest.co.in/public-api/users/11
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:12:05.628 [main] DEBUG com.intuit.karate - response time in milliseconds: 711
+1 < 200
+1 < Date: Tue, 05 Dec 2023 02:12:05 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"b654e1cd0d3be5d471e57be8f71a8543"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: cd302e87-7714-40a4-aa23-9deb8874d58b
+1 < x-runtime: 0.021796
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=fpZyMDu9G1eaChbMY841qR0fgEzHzpFXG35%2Be%2BF6FSy0t12ZoRAJf71ckLLszvmOOTDV%2BLZr8k8mpymHwY%2BCvAD%2ByCxUCFGV2mLzAsuwCvyaLemPp8bsPSBuvr8JSQI%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8308c31e3d066455-GIG
+1 < alt-svc: h3=":443"; ma=86400
+{"code":404,"data":{"message":"Resource not found"},"meta":null}
+23:12:05.632 [main] ERROR com.intuit.karate - classpath:Prova_Karate/exer1.feature:32
+Then status 404
+status code was: 200, expected: 404, response time in milliseconds: 711, url: https://gorest.co.in/public-api/users/11, response: 
+{"code":404,"meta":null,"data":{"message":"Resource not found"}}
+classpath:Prova_Karate/exer1.feature:32
+23:12:33.894 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:12:35.373 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:12:36.099 [main] DEBUG com.intuit.karate - request:
+1 > POST https://gorest.co.in/public-api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 110
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"data.gender":"male","data.email":"novousuario@teste.com","data.status":"active","data.name":"Novo Usuário"}
+
+23:12:36.952 [main] DEBUG com.intuit.karate - response time in milliseconds: 848
+1 < 200
+1 < Date: Tue, 05 Dec 2023 02:12:37 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"65ab5ef0fb80a32b1723c5368d8edb14"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: e07ffec5-9ae3-4931-be21-8535437be67c
+1 < x-runtime: 0.014823
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=gq6I%2F2crae63BaYIc1v98oVA16PBxHwpmL%2BFtqlxEugLnJLuBeFiUCkhMLt8sABy1Apo3rrjVI0JTYPmn0d9lnNWN3Ql%2BDrXYVaFgB3GBK0CI34Qrvp6kCAQ%2F8VF%2Fwk%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8308c3e1dec3275e-GIG
+1 < alt-svc: h3=":443"; ma=86400
+{"code":401,"data":{"message":"Authentication failed"},"meta":null}
+23:12:36.988 [main] ERROR com.intuit.karate - classpath:Prova_Karate/exer1.feature:8
+And match $.data.name == 'Novo Usuário'
+match failed: EQUALS
+  $ | actual path does not exist (STRING:STRING)
+  '#notpresent'
+  'Novo Usuário'
+
+classpath:Prova_Karate/exer1.feature:8
+23:12:37.086 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:12:37.091 [main] DEBUG com.intuit.karate - request:
+1 > GET https://gorest.co.in/public-api/users
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:12:37.573 [main] DEBUG com.intuit.karate - response time in milliseconds: 478
+1 < 200
+1 < Date: Tue, 05 Dec 2023 02:12:37 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"3a6251925a17382c1ab8cba29b8b22e7"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: e5287c8d-e1f6-4c92-bfa6-8b3621606d41
+1 < x-runtime: 0.043470
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=dGORikM3A545vOSmCGxDt8UE4dU6h6fqjETD4sr1AK1DwsEFhLpDBu0M%2FO5QcLh5kUc%2BcXgf0zikYp5Nutp3Efp4HqcWioCfT3DKcWoL5gFEdkzvwnVw%2FGerVKUNdls%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8308c3e5a841117c-GIG
+1 < alt-svc: h3=":443"; ma=86400
+{"code":200,"data":[{"gender":"male","name":"Karthik Sethi","id":5710543,"email":"karthik_sethi@stroman-rowe.test","status":"active"},{"gender":"female","name":"Bankimchandra Kaur","id":5710540,"email":"bankimchandra_kaur@osinski-greenholt.example","status":"active"},{"gender":"female","name":"Chaturaanan Sharma","id":5710539,"email":"chaturaanan_sharma@mueller.test","status":"active"},{"gender":"male","name":"Kalinda Menon","id":5710538,"email":"kalinda_menon@lynch-veum.test","status":"active"},{"gender":"female","name":"Gaurang Khanna","id":5710537,"email":"gaurang_khanna@nikolaus-donnelly.example","status":"inactive"},{"gender":"female","name":"Anjushree Nayar","id":5710536,"email":"nayar_anjushree@damore.example","status":"active"},{"gender":"female","name":"Akshata Kakkar","id":5710535,"email":"kakkar_akshata@rohan.example","status":"inactive"},{"gender":"female","name":"Rohan Johar CPA","id":5710533,"email":"johar_rohan_cpa@schiller.test","status":"inactive"},{"gender":"female","name":"Krishnadasa Pandey","id":5710532,"email":"pandey_krishnadasa@ledner-carroll.example","status":"inactive"},{"gender":"female","name":"Smriti Sharma II","id":5710531,"email":"smriti_sharma_ii@baumbach.test","status":"inactive"}],"meta":{"pagination":{"total":2668,"pages":267,"limit":10,"page":1}}}
+23:12:37.580 [main] ERROR com.intuit.karate - classpath:Prova_Karate/exer1.feature:14
+And match response.data.size > 0
+no step-definition method match found for: match response.data.size > 0
+classpath:Prova_Karate/exer1.feature:14
+23:12:37.603 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:12:37.614 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://gorest.co.in/public-api/users/5710543
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 40
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Novo Nome","status":"inactive"}
+
+23:12:38.086 [main] DEBUG com.intuit.karate - response time in milliseconds: 470
+1 < 200
+1 < Date: Tue, 05 Dec 2023 02:12:38 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"65ab5ef0fb80a32b1723c5368d8edb14"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: 825a17ea-c8a1-4c30-b52a-5198ac14c25d
+1 < x-runtime: 0.017142
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=x51vdmdlUkhEEQGhmFZYBxIVvpCvsHVv7fpAy%2FmyRl89PD1IW2Lvwf%2FKAUBmVS6xp4xzAshGmxQYZq%2BaPyDfqWKTihFps67A7c8Zb%2BNeH3T%2BZc5Em3c2PBwfihN86jU%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8308c3e909306d4e-GIG
+1 < alt-svc: h3=":443"; ma=86400
+{"code":401,"data":{"message":"Authentication failed"},"meta":null}
+23:12:38.092 [main] ERROR com.intuit.karate - classpath:Prova_Karate/exer1.feature:21
+And match response.data.name == 'Novo Nome'
+match failed: EQUALS
+  $ | actual path does not exist (STRING:STRING)
+  '#notpresent'
+  'Novo Nome'
+
+classpath:Prova_Karate/exer1.feature:21
+23:12:38.111 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:12:38.120 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://gorest.co.in/public-api/users/5710538
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:12:38.591 [main] DEBUG com.intuit.karate - response time in milliseconds: 470
+1 < 200
+1 < Date: Tue, 05 Dec 2023 02:12:38 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"65ab5ef0fb80a32b1723c5368d8edb14"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: e7b7c7cb-5e49-4bcd-9f86-680aecd75a75
+1 < x-runtime: 0.034900
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=ScJt0C7x9l%2BdJ0PDBNSvwUMIdJeiDoWoE4A%2FB242OyeHdXqRhy82zfw%2FH165gM4Fcurbf1LvFnJzKdKqvnx7K3r9IH0JXHfWVh70%2BH83TQuBnELcg4VhwDziyGthVIE%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8308c3ec2fb56493-GIG
+1 < alt-svc: h3=":443"; ma=86400
+{"code":401,"data":{"message":"Authentication failed"},"meta":null}
+23:12:38.611 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:12:38.617 [main] DEBUG com.intuit.karate - request:
+1 > GET https://gorest.co.in/public-api/users/asdsadas
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:12:39.069 [main] DEBUG com.intuit.karate - response time in milliseconds: 452
+1 < 200
+1 < Date: Tue, 05 Dec 2023 02:12:39 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"b654e1cd0d3be5d471e57be8f71a8543"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: 52c653cf-d44f-436d-aa81-f6ecfd1eca1b
+1 < x-runtime: 0.015365
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=nL5tLWDczDwdKBEH6dzUQqViVBw95M%2FaveUcFebWHal0zpCga5Nx%2BFDTbXA3G6r7iDbpZXH2PgCks%2BMmNWv5izR%2FOrbJbQ9WRCzbGuXqtuDwU%2F71xGPYuqMhw1dg9Uc%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8308c3ef4c0a1d60-GIG
+1 < alt-svc: h3=":443"; ma=86400
+{"code":404,"data":{"message":"Resource not found"},"meta":null}
+23:12:39.071 [main] ERROR com.intuit.karate - classpath:Prova_Karate/exer1.feature:32
+Then status 404
+status code was: 200, expected: 404, response time in milliseconds: 452, url: https://gorest.co.in/public-api/users/asdsadas, response: 
+{"code":404,"meta":null,"data":{"message":"Resource not found"}}
+classpath:Prova_Karate/exer1.feature:32
+23:14:13.273 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:14:14.967 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:14:15.653 [main] DEBUG com.intuit.karate - request:
+1 > POST https://gorest.co.in/public-api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 110
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"data.gender":"male","data.email":"novousuario@teste.com","data.status":"active","data.name":"Novo Usuário"}
+
+23:14:16.404 [main] DEBUG com.intuit.karate - response time in milliseconds: 747
+1 < 200
+1 < Date: Tue, 05 Dec 2023 02:14:16 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"65ab5ef0fb80a32b1723c5368d8edb14"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: aeb73d29-ec6f-43de-a5e3-0631e384247b
+1 < x-runtime: 0.007223
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=UtBbWSqUKKCCVQ9jwwIvXdOtpU5shoyfNX7Nws6hX11tJSYkfrwkaIvOuw1n1BAc1aGaeHOLQTh7JHHlvMWdSeF5wX8iVm8LAEVYXVJHIvQ5BiK%2Fo7u%2BR4q8K45nn0Q%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8308c64f8f8e2603-GIG
+1 < alt-svc: h3=":443"; ma=86400
+{"code":401,"data":{"message":"Authentication failed"},"meta":null}
+23:14:16.449 [main] ERROR com.intuit.karate - classpath:Prova_Karate/exer1.feature:8
+And match $.data.name == 'Novo Usuário'
+match failed: EQUALS
+  $ | actual path does not exist (STRING:STRING)
+  '#notpresent'
+  'Novo Usuário'
+
+classpath:Prova_Karate/exer1.feature:8
+23:14:16.515 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:14:16.521 [main] DEBUG com.intuit.karate - request:
+1 > GET https://gorest.co.in/public-api/users
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:14:17.029 [main] DEBUG com.intuit.karate - response time in milliseconds: 506
+1 < 200
+1 < Date: Tue, 05 Dec 2023 02:14:17 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"3a6251925a17382c1ab8cba29b8b22e7"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: f547ee67-0788-45e1-9d6e-a61c235a06a0
+1 < x-runtime: 0.049419
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=3kICLWZamXAk2X%2FVKLsOY04OPwz6mOBjJpB%2FttMkiUbC5tEPqN80J64BLGQTT6dlBI0npQVUDJeWyi%2B5fWHsYsp9mtvf8quhSK9QlHdZhtKmZjsPSOfWubRrtQurOqY%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8308c6532b1625a2-GIG
+1 < alt-svc: h3=":443"; ma=86400
+{"code":200,"data":[{"gender":"male","name":"Karthik Sethi","id":5710543,"email":"karthik_sethi@stroman-rowe.test","status":"active"},{"gender":"female","name":"Bankimchandra Kaur","id":5710540,"email":"bankimchandra_kaur@osinski-greenholt.example","status":"active"},{"gender":"female","name":"Chaturaanan Sharma","id":5710539,"email":"chaturaanan_sharma@mueller.test","status":"active"},{"gender":"male","name":"Kalinda Menon","id":5710538,"email":"kalinda_menon@lynch-veum.test","status":"active"},{"gender":"female","name":"Gaurang Khanna","id":5710537,"email":"gaurang_khanna@nikolaus-donnelly.example","status":"inactive"},{"gender":"female","name":"Anjushree Nayar","id":5710536,"email":"nayar_anjushree@damore.example","status":"active"},{"gender":"female","name":"Akshata Kakkar","id":5710535,"email":"kakkar_akshata@rohan.example","status":"inactive"},{"gender":"female","name":"Rohan Johar CPA","id":5710533,"email":"johar_rohan_cpa@schiller.test","status":"inactive"},{"gender":"female","name":"Krishnadasa Pandey","id":5710532,"email":"pandey_krishnadasa@ledner-carroll.example","status":"inactive"},{"gender":"female","name":"Smriti Sharma II","id":5710531,"email":"smriti_sharma_ii@baumbach.test","status":"inactive"}],"meta":{"pagination":{"total":2668,"pages":267,"limit":10,"page":1}}}
+23:14:17.033 [main] ERROR com.intuit.karate - classpath:Prova_Karate/exer1.feature:14
+And match response.data.size > 0
+no step-definition method match found for: match response.data.size > 0
+classpath:Prova_Karate/exer1.feature:14
+23:14:17.051 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:14:17.062 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://gorest.co.in/public-api/users/5710543
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 40
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Novo Nome","status":"inactive"}
+
+23:14:17.568 [main] DEBUG com.intuit.karate - response time in milliseconds: 505
+1 < 200
+1 < Date: Tue, 05 Dec 2023 02:14:17 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"65ab5ef0fb80a32b1723c5368d8edb14"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: 3757a8a2-7e95-470f-98e5-534a5b9d58e5
+1 < x-runtime: 0.018573
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=VC6vwVK0xKlEBesfP8OpVmUz7KwWVQK6283XFCkK2D%2FqrLyOfUaCZyHSo0A3j7VJP32DoXTwRDo0kIdV8kWHvRcpDQ7HOBU%2BxhM6uHLGPiYQM%2Bb%2BwVE14b%2FdVLAoMJ4%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8308c656cd7272e1-GIG
+1 < alt-svc: h3=":443"; ma=86400
+{"code":401,"data":{"message":"Authentication failed"},"meta":null}
+23:14:17.575 [main] ERROR com.intuit.karate - classpath:Prova_Karate/exer1.feature:21
+And match response.data.name == 'Novo Nome'
+match failed: EQUALS
+  $ | actual path does not exist (STRING:STRING)
+  '#notpresent'
+  'Novo Nome'
+
+classpath:Prova_Karate/exer1.feature:21
+23:14:17.599 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:14:17.606 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://gorest.co.in/public-api/users/5710538
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:14:18.064 [main] DEBUG com.intuit.karate - response time in milliseconds: 456
+1 < 200
+1 < Date: Tue, 05 Dec 2023 02:14:18 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"65ab5ef0fb80a32b1723c5368d8edb14"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: d1214503-4400-4ba1-b8fa-f495ac69e4de
+1 < x-runtime: 0.016246
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=VosWRC7XMckH%2Fwp5CaAG%2F0kLYvG65nzpBQpAH45Oqz2mcoZQrYMq0KvdXFHWAS3RhGlMCb%2Bom%2BTRmR1T2imkpTrsGpnobta8FtSsM8Fb1ISHzNg2fq6r3I9IhTFh0sY%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8308c659eb261178-GIG
+1 < alt-svc: h3=":443"; ma=86400
+{"code":401,"data":{"message":"Authentication failed"},"meta":null}
+23:14:18.081 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:14:18.085 [main] DEBUG com.intuit.karate - request:
+1 > GET https://gorest.co.in/public-api/users/asdsadas
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:14:18.522 [main] DEBUG com.intuit.karate - response time in milliseconds: 435
+1 < 200
+1 < Date: Tue, 05 Dec 2023 02:14:18 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"b654e1cd0d3be5d471e57be8f71a8543"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: d6ed7344-b7a7-4c80-93af-9bc13f164132
+1 < x-runtime: 0.014768
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=wx5A3o9oEhk5LYfT7nx0UUBjux4wvqiHuvM8ofJrxnDYyQJ2A6XSiMl%2BtMxEkjDStxWYZhoFT5qKXlyYGiLY0sKYNqfmGTfap64cw%2FqmmmvgKoZXEgpINx667cIg%2FOM%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8308c65cdc462618-GIG
+1 < alt-svc: h3=":443"; ma=86400
+{"code":404,"data":{"message":"Resource not found"},"meta":null}
+23:14:18.527 [main] ERROR com.intuit.karate - classpath:Prova_Karate/exer1.feature:33
+And match response.message == 'Resource not found'
+match failed: EQUALS
+  $ | actual path does not exist (STRING:STRING)
+  '#notpresent'
+  'Resource not found'
+
+classpath:Prova_Karate/exer1.feature:33
+23:14:58.590 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:15:00.075 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:15:00.765 [main] DEBUG com.intuit.karate - request:
+1 > POST https://gorest.co.in/public-api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 110
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"data.gender":"male","data.email":"novousuario@teste.com","data.status":"active","data.name":"Novo Usuário"}
+
+23:15:01.558 [main] DEBUG com.intuit.karate - response time in milliseconds: 791
+1 < 200
+1 < Date: Tue, 05 Dec 2023 02:15:01 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"65ab5ef0fb80a32b1723c5368d8edb14"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: 15470d12-d2e4-4203-9d44-ace703d9b8a2
+1 < x-runtime: 0.011529
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=qfmyA530SU0RSmlbOjwC7SdSBYEAUVOJv%2B4RLx%2Fp%2BJN3TbqEayY9Rs5x0QyGi%2Bjoy2%2F2D7qrPMAYl1cnBBTRh6NY9HCSjx96wYXEINGRPWpTMqS3D9Z3CkSc6cbWKvY%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8308c769bc4e2603-GIG
+1 < alt-svc: h3=":443"; ma=86400
+{"code":401,"data":{"message":"Authentication failed"},"meta":null}
+23:15:01.616 [main] ERROR com.intuit.karate - classpath:Prova_Karate/exer1.feature:8
+And match $.data.name == 'Novo Usuário'
+match failed: EQUALS
+  $ | actual path does not exist (STRING:STRING)
+  '#notpresent'
+  'Novo Usuário'
+
+classpath:Prova_Karate/exer1.feature:8
+23:15:01.707 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:15:01.714 [main] DEBUG com.intuit.karate - request:
+1 > GET https://gorest.co.in/public-api/users
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:15:02.235 [main] DEBUG com.intuit.karate - response time in milliseconds: 520
+1 < 200
+1 < Date: Tue, 05 Dec 2023 02:15:02 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"3a6251925a17382c1ab8cba29b8b22e7"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: 9718845d-d0f8-4e15-a3d8-bc9432ef5e0d
+1 < x-runtime: 0.044612
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=vY%2FoayIjWLkrwWQkUSYMCA6eCbwHOpXGIbvFhPXldIyUnY2DVct1TuMZGa36TtM2dCqQ9xQko0XZ8qVaLduIA%2BkpE5kikEVn6PIic8lTr6ob6HVpsr0KVyJ1yEJL%2B04%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8308c76dc9122786-GIG
+1 < alt-svc: h3=":443"; ma=86400
+{"code":200,"data":[{"gender":"male","name":"Karthik Sethi","id":5710543,"email":"karthik_sethi@stroman-rowe.test","status":"active"},{"gender":"female","name":"Bankimchandra Kaur","id":5710540,"email":"bankimchandra_kaur@osinski-greenholt.example","status":"active"},{"gender":"female","name":"Chaturaanan Sharma","id":5710539,"email":"chaturaanan_sharma@mueller.test","status":"active"},{"gender":"male","name":"Kalinda Menon","id":5710538,"email":"kalinda_menon@lynch-veum.test","status":"active"},{"gender":"female","name":"Gaurang Khanna","id":5710537,"email":"gaurang_khanna@nikolaus-donnelly.example","status":"inactive"},{"gender":"female","name":"Anjushree Nayar","id":5710536,"email":"nayar_anjushree@damore.example","status":"active"},{"gender":"female","name":"Akshata Kakkar","id":5710535,"email":"kakkar_akshata@rohan.example","status":"inactive"},{"gender":"female","name":"Rohan Johar CPA","id":5710533,"email":"johar_rohan_cpa@schiller.test","status":"inactive"},{"gender":"female","name":"Krishnadasa Pandey","id":5710532,"email":"pandey_krishnadasa@ledner-carroll.example","status":"inactive"},{"gender":"female","name":"Smriti Sharma II","id":5710531,"email":"smriti_sharma_ii@baumbach.test","status":"inactive"}],"meta":{"pagination":{"total":2668,"pages":267,"limit":10,"page":1}}}
+23:15:02.240 [main] ERROR com.intuit.karate - classpath:Prova_Karate/exer1.feature:14
+And match response.data.size > 0
+no step-definition method match found for: match response.data.size > 0
+classpath:Prova_Karate/exer1.feature:14
+23:15:02.258 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:15:02.269 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://gorest.co.in/public-api/users/5710543
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 40
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Novo Nome","status":"inactive"}
+
+23:15:02.717 [main] DEBUG com.intuit.karate - response time in milliseconds: 446
+1 < 200
+1 < Date: Tue, 05 Dec 2023 02:15:02 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"65ab5ef0fb80a32b1723c5368d8edb14"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: a0f11b33-ca9c-4abf-869c-107451d415f8
+1 < x-runtime: 0.018443
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=hipe1sL77K3ZvpNUbbY1fSQ3%2F7%2FmiMCH2RMA4ayJa21%2Fyz4zL8k%2F1B0%2BrINVRl4qOiOSPSmvYQ4kNmkOTqfZ2FulSy6wj%2B4W1ykbQw5xC8i99l38ep8OPGMBBWWD%2FkQ%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8308c7711e706466-GIG
+1 < alt-svc: h3=":443"; ma=86400
+{"code":401,"data":{"message":"Authentication failed"},"meta":null}
+23:15:02.723 [main] ERROR com.intuit.karate - classpath:Prova_Karate/exer1.feature:21
+And match response.data.name == 'Novo Nome'
+match failed: EQUALS
+  $ | actual path does not exist (STRING:STRING)
+  '#notpresent'
+  'Novo Nome'
+
+classpath:Prova_Karate/exer1.feature:21
+23:15:02.742 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:15:02.750 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://gorest.co.in/public-api/users/5710538
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:15:03.238 [main] DEBUG com.intuit.karate - response time in milliseconds: 485
+1 < 200
+1 < Date: Tue, 05 Dec 2023 02:15:03 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"65ab5ef0fb80a32b1723c5368d8edb14"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: 56fdb154-9ac4-4eed-be93-f57195c2edbb
+1 < x-runtime: 0.014536
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=2tGf4blSr6p1EvmO%2F8YsI1hbKxOIkfgvSrpKzTm0FTyBwYuYLXG8M3J8O%2F1pb8lCetJBcPmRzbR68L0iWnl45hy7NhK4VJO5vf0QSI4FNBQ0orv%2BJ%2FhHmIdHdWk5Fso%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8308c7742acc1180-GIG
+1 < alt-svc: h3=":443"; ma=86400
+{"code":401,"data":{"message":"Authentication failed"},"meta":null}
+23:15:03.255 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:15:03.261 [main] DEBUG com.intuit.karate - request:
+1 > GET https://gorest.co.in/public-api/users/asdsadas
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:15:03.690 [main] DEBUG com.intuit.karate - response time in milliseconds: 428
+1 < 200
+1 < Date: Tue, 05 Dec 2023 02:15:03 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"b654e1cd0d3be5d471e57be8f71a8543"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: c0007b40-666c-43f8-864d-4849a6143c58
+1 < x-runtime: 0.016232
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=fpWti%2Fhiu%2B%2FLvoW7gjnrb%2Bdlc8ToBE0fbjO4JE7m0UnNo4JbFA1H578IzG%2FzDnUbADbXosHdjJMY4YoyLKGtQsilP%2B%2BqDfMnVDIABbqfwVgxqZaYJ1WKJm7hOq%2FZEsE%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8308c7773d4e2603-GIG
+1 < alt-svc: h3=":443"; ma=86400
+{"code":404,"data":{"message":"Resource not found"},"meta":null}
+23:17:30.124 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:17:31.738 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:17:32.485 [main] DEBUG com.intuit.karate - request:
+1 > POST https://gorest.co.in/public-api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 110
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"data.gender":"male","data.email":"novousuario@teste.com","data.status":"active","data.name":"Novo Usuário"}
+
+23:17:33.333 [main] DEBUG com.intuit.karate - response time in milliseconds: 843
+1 < 200
+1 < Date: Tue, 05 Dec 2023 02:17:33 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"65ab5ef0fb80a32b1723c5368d8edb14"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: 8db6a4bd-16f0-4eb3-8ae3-13a4bb79acf5
+1 < x-runtime: 0.016814
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=sPrYzv3%2BaJQyuOq3%2FmalVsm2%2B4K8wVr%2F6tC8xxiX1dpEyXeGINUVjESplip8Yytjp9qLUThUk1Prwa8c7cKUwzDprncegvEBuZbTV%2FZPm7ZhGSySWVYci7fULe8j%2Bgo%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8308cb1e2ed325a4-GIG
+1 < alt-svc: h3=":443"; ma=86400
+{"code":401,"data":{"message":"Authentication failed"},"meta":null}
+23:17:33.378 [main] ERROR com.intuit.karate - classpath:Prova_Karate/exer1.feature:8
+And match $.data.name == 'Novo Usuário'
+match failed: EQUALS
+  $ | actual path does not exist (STRING:STRING)
+  '#notpresent'
+  'Novo Usuário'
+
+classpath:Prova_Karate/exer1.feature:8
+23:17:33.432 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:17:33.441 [main] DEBUG com.intuit.karate - request:
+1 > GET https://gorest.co.in/public-api/users
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:17:34.604 [main] DEBUG com.intuit.karate - response time in milliseconds: 1161
+1 < 200
+1 < Date: Tue, 05 Dec 2023 02:17:34 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"3a6251925a17382c1ab8cba29b8b22e7"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: 9feb528a-19f4-4088-bf8e-d5ebdc82251f
+1 < x-runtime: 0.035415
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=zyx7SeoHorVwpsv%2BEK6pkI7F5EwrOzA5k2HnJoJL2M95epD7aIrNSvstbazEM37yGfmLavAVc8EWBgr09xg%2FcZyTdagJ5KZ7OrEFdfCVIKSVJWznhWx5L5kFkgjDZ6Y%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8308cb221af11d5e-GIG
+1 < alt-svc: h3=":443"; ma=86400
+{"code":200,"data":[{"gender":"male","name":"Karthik Sethi","id":5710543,"email":"karthik_sethi@stroman-rowe.test","status":"active"},{"gender":"female","name":"Bankimchandra Kaur","id":5710540,"email":"bankimchandra_kaur@osinski-greenholt.example","status":"active"},{"gender":"female","name":"Chaturaanan Sharma","id":5710539,"email":"chaturaanan_sharma@mueller.test","status":"active"},{"gender":"male","name":"Kalinda Menon","id":5710538,"email":"kalinda_menon@lynch-veum.test","status":"active"},{"gender":"female","name":"Gaurang Khanna","id":5710537,"email":"gaurang_khanna@nikolaus-donnelly.example","status":"inactive"},{"gender":"female","name":"Anjushree Nayar","id":5710536,"email":"nayar_anjushree@damore.example","status":"active"},{"gender":"female","name":"Akshata Kakkar","id":5710535,"email":"kakkar_akshata@rohan.example","status":"inactive"},{"gender":"female","name":"Rohan Johar CPA","id":5710533,"email":"johar_rohan_cpa@schiller.test","status":"inactive"},{"gender":"female","name":"Krishnadasa Pandey","id":5710532,"email":"pandey_krishnadasa@ledner-carroll.example","status":"inactive"},{"gender":"female","name":"Smriti Sharma II","id":5710531,"email":"smriti_sharma_ii@baumbach.test","status":"inactive"}],"meta":{"pagination":{"total":2668,"pages":267,"limit":10,"page":1}}}
+23:17:34.607 [main] ERROR com.intuit.karate - classpath:Prova_Karate/exer1.feature:14
+And match response.data.size > 0
+no step-definition method match found for: match response.data.size > 0
+classpath:Prova_Karate/exer1.feature:14
+23:17:34.626 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:17:34.632 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://gorest.co.in/public-api/users/5710543
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 50
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"data.status":"inactive","data.name":"Novo Nome"}
+
+23:17:35.085 [main] DEBUG com.intuit.karate - response time in milliseconds: 453
+1 < 200
+1 < Date: Tue, 05 Dec 2023 02:17:35 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"65ab5ef0fb80a32b1723c5368d8edb14"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: daae23c1-a3f1-422c-b39e-83d92b987abd
+1 < x-runtime: 0.014600
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=gXcg1Qgm4QewBxXdcdSSaE492dFU5tSXUTtUQbgLWuh6B4FmixuU5xYejiGVXRAJJ7CDlRaMzIwjE0QO2NZ1eD268LOisYqNCYZTgR0SJvhPRWm28kqUHYnZjP66s%2Fk%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8308cb295d002590-GIG
+1 < alt-svc: h3=":443"; ma=86400
+{"code":401,"data":{"message":"Authentication failed"},"meta":null}
+23:17:35.090 [main] ERROR com.intuit.karate - classpath:Prova_Karate/exer1.feature:21
+And match response.data.name == 'Novo Nome'
+match failed: EQUALS
+  $ | actual path does not exist (STRING:STRING)
+  '#notpresent'
+  'Novo Nome'
+
+classpath:Prova_Karate/exer1.feature:21
+23:17:35.107 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:17:35.116 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://gorest.co.in/public-api/users/5710538
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:17:35.606 [main] DEBUG com.intuit.karate - response time in milliseconds: 489
+1 < 200
+1 < Date: Tue, 05 Dec 2023 02:17:35 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"65ab5ef0fb80a32b1723c5368d8edb14"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: 0483dd9f-ab91-4773-ad08-56773c0a7742
+1 < x-runtime: 0.015225
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=o8fDBG%2BhJZaupijg6uSlDi17HdXVeRA%2Bbc8hg%2FKw6l3Fk%2FGdAxi7cyqXIT6hNukWkxKP4onlqipixXLul2XNmWtqnPGJpgWHWHs%2BB9ZDUEty6kbknKWqSGJT5N%2FM2Mk%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8308cb2c6cc964bb-GIG
+1 < alt-svc: h3=":443"; ma=86400
+{"code":401,"data":{"message":"Authentication failed"},"meta":null}
+23:17:35.621 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:17:35.627 [main] DEBUG com.intuit.karate - request:
+1 > GET https://gorest.co.in/public-api/users/asdsadas
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:17:36.092 [main] DEBUG com.intuit.karate - response time in milliseconds: 465
+1 < 200
+1 < Date: Tue, 05 Dec 2023 02:17:36 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"b654e1cd0d3be5d471e57be8f71a8543"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: 4e24e453-8831-4a63-afc4-bfd8dc8b3e52
+1 < x-runtime: 0.025887
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=LJOAbUASI608j2x8TWd415XRLyTIXftGezi5M4Q7XQSOHL2qSjkVBEDLjmDHpHzpYVQ9tQkaOiOKztral20YbYlRDzFCIojxs9qoWsWCgIyJ4igSmrF79ZS%2BhwUDFgg%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8308cb2f8f0a118c-GIG
+1 < alt-svc: h3=":443"; ma=86400
+{"code":404,"data":{"message":"Resource not found"},"meta":null}
+23:20:17.126 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:20:18.601 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:20:19.318 [main] DEBUG com.intuit.karate - request:
+1 > POST https://gorest.co.in/public-api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 110
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"data.gender":"male","data.email":"novousuario@teste.com","data.status":"active","data.name":"Novo Usuário"}
+
+23:20:20.063 [main] DEBUG com.intuit.karate - response time in milliseconds: 742
+1 < 200
+1 < Date: Tue, 05 Dec 2023 02:20:20 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"65ab5ef0fb80a32b1723c5368d8edb14"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: 25fcba7b-d885-4f73-a34a-7723462779c4
+1 < x-runtime: 0.013942
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=1aQlqH%2BqxmbLyJKt8%2Bgdz9LvYrvuS3QSohAUtdI9sbAtiYyqAUHefmv16fuBej%2F9C23n%2BZg6nuMa5LYkXlCudxVSMQLNDPm9scZpWaWxPNSLEsRo0N0TVOVXbFE9YAI%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8308cf305931254d-GIG
+1 < alt-svc: h3=":443"; ma=86400
+{"code":401,"data":{"message":"Authentication failed"},"meta":null}
+23:20:20.100 [main] ERROR com.intuit.karate - classpath:Prova_Karate/exer1.feature:8
+And match $.data.name == 'Novo Usuário'
+match failed: EQUALS
+  $ | actual path does not exist (STRING:STRING)
+  '#notpresent'
+  'Novo Usuário'
+
+classpath:Prova_Karate/exer1.feature:8
+23:20:20.203 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:20:20.209 [main] DEBUG com.intuit.karate - request:
+1 > GET https://gorest.co.in/public-api/users
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:20:20.711 [main] DEBUG com.intuit.karate - response time in milliseconds: 499
+1 < 200
+1 < Date: Tue, 05 Dec 2023 02:20:20 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"3a6251925a17382c1ab8cba29b8b22e7"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: e18f1dbc-7985-4336-bc59-7c680f739d55
+1 < x-runtime: 0.046602
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=pGo6Du3UEPDtOYRFSwRVfFBrtB2nUGEcuEsYbhxrbEgYewfHvTFB2drqzJ49%2BvhZpo9B8rZMYCC%2F3OkEPD7kUNEW%2FkwiBAUJWq8ATEDXvKqP6pR4QAtuNSJJNlbuQPc%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8308cf345ec764e1-GIG
+1 < alt-svc: h3=":443"; ma=86400
+{"code":200,"data":[{"gender":"male","name":"Karthik Sethi","id":5710543,"email":"karthik_sethi@stroman-rowe.test","status":"active"},{"gender":"female","name":"Bankimchandra Kaur","id":5710540,"email":"bankimchandra_kaur@osinski-greenholt.example","status":"active"},{"gender":"female","name":"Chaturaanan Sharma","id":5710539,"email":"chaturaanan_sharma@mueller.test","status":"active"},{"gender":"male","name":"Kalinda Menon","id":5710538,"email":"kalinda_menon@lynch-veum.test","status":"active"},{"gender":"female","name":"Gaurang Khanna","id":5710537,"email":"gaurang_khanna@nikolaus-donnelly.example","status":"inactive"},{"gender":"female","name":"Anjushree Nayar","id":5710536,"email":"nayar_anjushree@damore.example","status":"active"},{"gender":"female","name":"Akshata Kakkar","id":5710535,"email":"kakkar_akshata@rohan.example","status":"inactive"},{"gender":"female","name":"Rohan Johar CPA","id":5710533,"email":"johar_rohan_cpa@schiller.test","status":"inactive"},{"gender":"female","name":"Krishnadasa Pandey","id":5710532,"email":"pandey_krishnadasa@ledner-carroll.example","status":"inactive"},{"gender":"female","name":"Smriti Sharma II","id":5710531,"email":"smriti_sharma_ii@baumbach.test","status":"inactive"}],"meta":{"pagination":{"total":2668,"pages":267,"limit":10,"page":1}}}
+23:20:20.716 [main] ERROR com.intuit.karate - classpath:Prova_Karate/exer1.feature:14
+And match response.data.size > 0
+no step-definition method match found for: match response.data.size > 0
+classpath:Prova_Karate/exer1.feature:14
+23:20:20.735 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:20:20.746 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://gorest.co.in/public-api/users/5710543
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 50
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"data.status":"inactive","data.name":"Novo Nome"}
+
+23:20:21.200 [main] DEBUG com.intuit.karate - response time in milliseconds: 452
+1 < 200
+1 < Date: Tue, 05 Dec 2023 02:20:21 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"65ab5ef0fb80a32b1723c5368d8edb14"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: 949b39c6-7fd2-4ba3-8368-443a1cfae445
+1 < x-runtime: 0.021413
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=YfUb6FgOvdAMgSfT6VqhGzGRbZhQuGM2dNluG0YsI1wcG6L9rmGWeDbIX94naFoSuC7o6F4qEx6UbRVO4kNG2%2FVckdToRIgzbK4bgedtC6q%2BuufoUxwIIBQujeOsqR8%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8308cf379aa772e3-GIG
+1 < alt-svc: h3=":443"; ma=86400
+{"code":401,"data":{"message":"Authentication failed"},"meta":null}
+23:20:21.206 [main] ERROR com.intuit.karate - classpath:Prova_Karate/exer1.feature:21
+And match response.data.name == 'Karthik Sethi'
+match failed: EQUALS
+  $ | actual path does not exist (STRING:STRING)
+  '#notpresent'
+  'Karthik Sethi'
+
+classpath:Prova_Karate/exer1.feature:21
+23:20:21.223 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:20:21.229 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://gorest.co.in/public-api/users/5710538
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:20:21.682 [main] DEBUG com.intuit.karate - response time in milliseconds: 450
+1 < 200
+1 < Date: Tue, 05 Dec 2023 02:20:21 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"65ab5ef0fb80a32b1723c5368d8edb14"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: afade078-6ebe-48e9-a31e-20e9db486028
+1 < x-runtime: 0.015552
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=kxWAmJfgDZgNC08aKtKdDqCNpVRn5t7ZdfYhvf%2FtImfrot1deHYimPx%2BU0bpq4bFEuP67arz%2B6miRB6llz21ekpfAmbYf4Q8Wy1voYL3vytlTZ4lnqu%2FqnSY4l1wEHg%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8308cf3a995225df-GIG
+1 < alt-svc: h3=":443"; ma=86400
+{"code":401,"data":{"message":"Authentication failed"},"meta":null}
+23:20:21.699 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:20:21.704 [main] DEBUG com.intuit.karate - request:
+1 > GET https://gorest.co.in/public-api/users/asdsadas
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:20:22.174 [main] DEBUG com.intuit.karate - response time in milliseconds: 469
+1 < 200
+1 < Date: Tue, 05 Dec 2023 02:20:22 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"b654e1cd0d3be5d471e57be8f71a8543"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: aab1ee3c-73b2-420e-8f34-2c8a8035d41f
+1 < x-runtime: 0.015850
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=PbuVXWLHhJuIu19KfiYfwFrygRQIjhy1S2nATLgwHnOSukfumI3g9%2F62FaeApzig3XfaUSFAu8GacHQdpa33ddgjoGYBLsKkxNKOhoXGChnlPZw%2FUmiOZQl0nkLmiwg%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8308cf3dac0872d1-GIG
+1 < alt-svc: h3=":443"; ma=86400
+{"code":404,"data":{"message":"Resource not found"},"meta":null}
+23:23:39.710 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:23:41.115 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:23:41.767 [main] DEBUG com.intuit.karate - request:
+1 > POST https://gorest.co.in/public-api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 110
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"data.gender":"male","data.email":"novousuario@teste.com","data.status":"active","data.name":"Novo Usuário"}
+
+23:23:43.267 [main] DEBUG com.intuit.karate - response time in milliseconds: 1498
+1 < 200
+1 < Date: Tue, 05 Dec 2023 02:23:43 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"65ab5ef0fb80a32b1723c5368d8edb14"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: 8ad89402-f8fe-4c2a-8235-92f33ffcbf5e
+1 < x-runtime: 0.014661
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=8ga8e%2B%2F6yW%2FxovYVpKzu5eUDMsBUSDgroVkfQQo6kL%2FjpHbnIAGEUeIPCT36Ys%2Ft7fHSiltqj7BJm88Rc0rCibSGuOIZofCumGsbmf3TRCAIIPscYTwgyxv2Jkl6Trg%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8308d4221c03644f-GIG
+1 < alt-svc: h3=":443"; ma=86400
+{"code":401,"data":{"message":"Authentication failed"},"meta":null}
+23:23:43.296 [main] ERROR com.intuit.karate - classpath:Prova_Karate/exer1.feature:8
+And match $.data.name == 'Novo Usuário'
+match failed: EQUALS
+  $ | actual path does not exist (STRING:STRING)
+  '#notpresent'
+  'Novo Usuário'
+
+classpath:Prova_Karate/exer1.feature:8
+23:23:43.383 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:23:43.388 [main] DEBUG com.intuit.karate - request:
+1 > GET https://gorest.co.in/public-api/users
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:23:43.897 [main] DEBUG com.intuit.karate - response time in milliseconds: 507
+1 < 200
+1 < Date: Tue, 05 Dec 2023 02:23:44 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"3a6251925a17382c1ab8cba29b8b22e7"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: f5a3c21f-a7b2-4eed-96e8-104b90184171
+1 < x-runtime: 0.054321
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=1ARcHPSGVb1ldb%2FVpdpNp3mT0GrRgpEO0%2FSPY2KWi%2F0269OyccBJ9yAbP7cq4YE4W7CC%2B7u8dRILvlGWPDI2l15%2FO5sBNhj%2BMBJtaG1HrHouHKhANMxxNhYLN737Ueg%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8308d42a1bae6d4e-GIG
+1 < alt-svc: h3=":443"; ma=86400
+{"code":200,"data":[{"gender":"male","name":"Karthik Sethi","id":5710543,"email":"karthik_sethi@stroman-rowe.test","status":"active"},{"gender":"female","name":"Bankimchandra Kaur","id":5710540,"email":"bankimchandra_kaur@osinski-greenholt.example","status":"active"},{"gender":"female","name":"Chaturaanan Sharma","id":5710539,"email":"chaturaanan_sharma@mueller.test","status":"active"},{"gender":"male","name":"Kalinda Menon","id":5710538,"email":"kalinda_menon@lynch-veum.test","status":"active"},{"gender":"female","name":"Gaurang Khanna","id":5710537,"email":"gaurang_khanna@nikolaus-donnelly.example","status":"inactive"},{"gender":"female","name":"Anjushree Nayar","id":5710536,"email":"nayar_anjushree@damore.example","status":"active"},{"gender":"female","name":"Akshata Kakkar","id":5710535,"email":"kakkar_akshata@rohan.example","status":"inactive"},{"gender":"female","name":"Rohan Johar CPA","id":5710533,"email":"johar_rohan_cpa@schiller.test","status":"inactive"},{"gender":"female","name":"Krishnadasa Pandey","id":5710532,"email":"pandey_krishnadasa@ledner-carroll.example","status":"inactive"},{"gender":"female","name":"Smriti Sharma II","id":5710531,"email":"smriti_sharma_ii@baumbach.test","status":"inactive"}],"meta":{"pagination":{"total":2668,"pages":267,"limit":10,"page":1}}}
+23:23:43.902 [main] ERROR com.intuit.karate - classpath:Prova_Karate/exer1.feature:14
+And match response.data.size > 0
+no step-definition method match found for: match response.data.size > 0
+classpath:Prova_Karate/exer1.feature:14
+23:23:43.918 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:23:43.931 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://gorest.co.in/public-api/users/5710543
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 20
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"data.name":"test"}
+
+23:23:44.397 [main] DEBUG com.intuit.karate - response time in milliseconds: 466
+1 < 200
+1 < Date: Tue, 05 Dec 2023 02:23:44 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"65ab5ef0fb80a32b1723c5368d8edb14"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: 7ef26a13-62f5-41c7-8cb3-b51eab181d20
+1 < x-runtime: 0.028553
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=l3fGy6cFAEbnv0Pu1r9i3C348NtMDS1mqSWM8q1uSO0VJg4LCQNb2CEcdbw2%2FTuQji0sLhKD4NV35ml7ZmegPvFLk3UZBhj0uoOVYcvsAk5z%2BZ0w1VLWdOswqQgDvQU%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8308d42d7d8a64cd-GIG
+1 < alt-svc: h3=":443"; ma=86400
+{"code":401,"data":{"message":"Authentication failed"},"meta":null}
+23:23:44.403 [main] ERROR com.intuit.karate - classpath:Prova_Karate/exer1.feature:21
+And match response.data.name == 'test'
+match failed: EQUALS
+  $ | actual path does not exist (STRING:STRING)
+  '#notpresent'
+  'test'
+
+classpath:Prova_Karate/exer1.feature:21
+23:23:44.419 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:23:44.430 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://gorest.co.in/public-api/users/5710538
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:23:44.913 [main] DEBUG com.intuit.karate - response time in milliseconds: 481
+1 < 200
+1 < Date: Tue, 05 Dec 2023 02:23:45 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"65ab5ef0fb80a32b1723c5368d8edb14"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: 49c8c5f9-83d2-4716-ad0d-4744bb61cf08
+1 < x-runtime: 0.027210
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=wOjtlI5%2BDVQx3ggwLoeskZkT5ahwu2I2ImulRtKDlZ8jn3Eo9y1adNWkGgsUrQR67Ki2FvkvI9o14OcYrzcjxjXRXFqoTFkCe0Cn8D4hG56emkvw2OoYAw1MpJ7jiTI%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8308d430ad9364e7-GIG
+1 < alt-svc: h3=":443"; ma=86400
+{"code":401,"data":{"message":"Authentication failed"},"meta":null}
+23:23:44.927 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:23:44.932 [main] DEBUG com.intuit.karate - request:
+1 > GET https://gorest.co.in/public-api/users/asdsadas
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:23:46.050 [main] DEBUG com.intuit.karate - response time in milliseconds: 1117
+1 < 200
+1 < Date: Tue, 05 Dec 2023 02:23:46 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"b654e1cd0d3be5d471e57be8f71a8543"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: 9d950960-980a-432e-b51e-cb70cdd2eb91
+1 < x-runtime: 0.026577
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=VIAuLCGYjmt51Vz955noBBQfbo%2F2KIonJMIzBshsich%2BkCpzXAfCAfUT423R8DgxDgA7XqKj2DfhAd3Q%2F3U7rewNzpUvbALqhdu3ip%2FBdJySJY98kCmaqokG%2FSfHdt0%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8308d433c9f16d39-GIG
+1 < alt-svc: h3=":443"; ma=86400
+{"code":404,"data":{"message":"Resource not found"},"meta":null}
+23:24:33.718 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:24:35.203 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:24:35.882 [main] DEBUG com.intuit.karate - request:
+1 > POST https://gorest.co.in/public-api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 110
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"data.gender":"male","data.email":"novousuario@teste.com","data.status":"active","data.name":"Novo Usuário"}
+
+23:24:36.670 [main] DEBUG com.intuit.karate - response time in milliseconds: 782
+1 < 200
+1 < Date: Tue, 05 Dec 2023 02:24:36 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"65ab5ef0fb80a32b1723c5368d8edb14"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: 2c518173-81b7-41d5-82b7-8058d95ef7fa
+1 < x-runtime: 0.010586
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=RBTKLKL6mzNg5a0VhnN%2FzGbJAfl5xmT%2BJxUAciF2HnC5mMT5ZeoGS05uLRNI4k1P6451KBKovNTPYm8G2CPD5Iot0MV6H4w%2FkyTP9leoPSEOjTkjxtUM6yO2kVLRWUs%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8308d5742e9064af-GIG
+1 < alt-svc: h3=":443"; ma=86400
+{"code":401,"data":{"message":"Authentication failed"},"meta":null}
+23:24:36.733 [main] ERROR com.intuit.karate - classpath:Prova_Karate/exer1.feature:8
+And match $.data.name == 'Novo Usuário'
+match failed: EQUALS
+  $ | actual path does not exist (STRING:STRING)
+  '#notpresent'
+  'Novo Usuário'
+
+classpath:Prova_Karate/exer1.feature:8
+23:24:36.785 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:24:36.821 [main] DEBUG com.intuit.karate - request:
+1 > GET https://gorest.co.in/public-api/users
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:24:37.317 [main] DEBUG com.intuit.karate - response time in milliseconds: 493
+1 < 200
+1 < Date: Tue, 05 Dec 2023 02:24:37 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"3a6251925a17382c1ab8cba29b8b22e7"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: 90c97368-b18e-48fd-bef4-6f16da2dc278
+1 < x-runtime: 0.051192
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=K4V6kBlIst%2F6ublersrR9WlxpDwk7qZGe7e2unjCJnO2JcKuzZVTpHoUBzNWDZQK7jsH%2FCKiFYsRLqLTFEZBlw2lxQqu5ogzGKGFTX5KFAqjeB15asfROkMhaeRSRm8%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8308d5780b3f2555-GIG
+1 < alt-svc: h3=":443"; ma=86400
+{"code":200,"data":[{"gender":"male","name":"Karthik Sethi","id":5710543,"email":"karthik_sethi@stroman-rowe.test","status":"active"},{"gender":"female","name":"Bankimchandra Kaur","id":5710540,"email":"bankimchandra_kaur@osinski-greenholt.example","status":"active"},{"gender":"female","name":"Chaturaanan Sharma","id":5710539,"email":"chaturaanan_sharma@mueller.test","status":"active"},{"gender":"male","name":"Kalinda Menon","id":5710538,"email":"kalinda_menon@lynch-veum.test","status":"active"},{"gender":"female","name":"Gaurang Khanna","id":5710537,"email":"gaurang_khanna@nikolaus-donnelly.example","status":"inactive"},{"gender":"female","name":"Anjushree Nayar","id":5710536,"email":"nayar_anjushree@damore.example","status":"active"},{"gender":"female","name":"Akshata Kakkar","id":5710535,"email":"kakkar_akshata@rohan.example","status":"inactive"},{"gender":"female","name":"Rohan Johar CPA","id":5710533,"email":"johar_rohan_cpa@schiller.test","status":"inactive"},{"gender":"female","name":"Krishnadasa Pandey","id":5710532,"email":"pandey_krishnadasa@ledner-carroll.example","status":"inactive"},{"gender":"female","name":"Smriti Sharma II","id":5710531,"email":"smriti_sharma_ii@baumbach.test","status":"inactive"}],"meta":{"pagination":{"total":2668,"pages":267,"limit":10,"page":1}}}
+23:24:37.321 [main] ERROR com.intuit.karate - classpath:Prova_Karate/exer1.feature:14
+And match response.data.size > 0
+no step-definition method match found for: match response.data.size > 0
+classpath:Prova_Karate/exer1.feature:14
+23:24:37.340 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:24:37.351 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://gorest.co.in/public-api/users/5710543
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 20
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"data.name":"test"}
+
+23:24:37.857 [main] DEBUG com.intuit.karate - response time in milliseconds: 505
+1 < 200
+1 < Date: Tue, 05 Dec 2023 02:24:38 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"65ab5ef0fb80a32b1723c5368d8edb14"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: fd032552-4940-4000-953e-1b60ef4f73bc
+1 < x-runtime: 0.017032
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=SdOz8dNQwJmokArUjjQOPEwSrGsdIewpMIPK8do9FsPqNxBK380cDk799ap33slTHZN1efaPEllEqd0hyqxiu4ohG2KqMiogA23hBAcSfrbXHQbTwToshNhi4fRMbDM%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8308d57bbee71d40-GIG
+1 < alt-svc: h3=":443"; ma=86400
+{"code":401,"data":{"message":"Authentication failed"},"meta":null}
+23:24:37.878 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:24:37.886 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://gorest.co.in/public-api/users/5710538
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:24:38.349 [main] DEBUG com.intuit.karate - response time in milliseconds: 462
+1 < 200
+1 < Date: Tue, 05 Dec 2023 02:24:38 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"65ab5ef0fb80a32b1723c5368d8edb14"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: 23a037c7-5a6a-47a5-b84f-a1ba8841613f
+1 < x-runtime: 0.020520
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=3ADODWENTzzkiPutLYzt0akwOEbCIJDOnUgsK%2Fow6Wwu3zKEMtEYveYwkceZJ1hfHUozD5axiVvQWd2EoBkfGUpzk7qeTlV7ybnHkYLwgP90Y4PMxkdCoJ40cWOmmBE%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8308d57ebfd36508-GIG
+1 < alt-svc: h3=":443"; ma=86400
+{"code":401,"data":{"message":"Authentication failed"},"meta":null}
+23:24:38.364 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:24:38.368 [main] DEBUG com.intuit.karate - request:
+1 > GET https://gorest.co.in/public-api/users/asdsadas
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:24:39.661 [main] DEBUG com.intuit.karate - response time in milliseconds: 1292
+1 < 200
+1 < Date: Tue, 05 Dec 2023 02:24:39 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"b654e1cd0d3be5d471e57be8f71a8543"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: 5c846278-ae0b-459e-8f44-580c7aee88d8
+1 < x-runtime: 0.020126
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=OAK6q5xJv7BAlZ%2B0hsmrHWLYig603hGon24LDBux32rDVj3%2BJl63ckWlxHle9GKxQdp80mDWvhyy7acTSjVlhUtRVTCzor%2FPX1GS4TuFp3w1CjY%2BpqELw9DEk8Er928%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8308d581abaa6503-GIG
+1 < alt-svc: h3=":443"; ma=86400
+{"code":404,"data":{"message":"Resource not found"},"meta":null}

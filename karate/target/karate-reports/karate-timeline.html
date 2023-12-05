@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"Prova_Karate\/exer1[1:3]","start":1701743074863,"end":1701743076734,"title":"Prova_Karate\/exer1[1:3] 23:24:34.863-23:24:36.734 Criar um novo usuário","className":"failed"},{"id":2,"group":1,"content":"Prova_Karate\/exer1[2:10]","start":1701743076784,"end":1701743077320,"title":"Prova_Karate\/exer1[2:10] 23:24:36.784-23:24:37.320 Verificar a listagem de usuários","className":"failed"},{"id":3,"group":1,"content":"Prova_Karate\/exer1[3:16]","start":1701743077339,"end":1701743077862,"title":"Prova_Karate\/exer1[3:16] 23:24:37.339-23:24:37.862 Atualizar informações de um usuário"},{"id":4,"group":1,"content":"Prova_Karate\/exer1[4:23]","start":1701743077877,"end":1701743078351,"title":"Prova_Karate\/exer1[4:23] 23:24:37.877-23:24:38.351 Excluir um usuário"},{"id":5,"group":1,"content":"Prova_Karate\/exer1[5:28]","start":1701743078363,"end":1701743079665,"title":"Prova_Karate\/exer1[5:28] 23:24:38.363-23:24:39.665 Buscar por um usuário inexistente"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
