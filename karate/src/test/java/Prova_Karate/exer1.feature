@@ -20,6 +20,12 @@ Scenario: Atualizar informações de um usuário
   Then status 200
   And match response.data.name == 'test'
 
+Scenario: Buscar por um usuário inexistente
+  Given url 'https://gorest.co.in/public-api/users/asdsadas'  
+  When method get
+  Then status 200
+  And match response.data.message == 'Resource not found'
+
 
 
 
