@@ -26,6 +26,12 @@ Scenario: Buscar por um usuário inexistente
   Then status 200
   And match response.data.message == 'Resource not found'
 
+Scenario: Excluir um usuário
+  Given url 'https://gorest.co.in/public-api/users/5710538' 
+  When method delete
+  Then status 200
+
+
 
 
 
